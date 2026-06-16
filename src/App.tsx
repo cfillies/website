@@ -22,6 +22,7 @@ import {
   Bot24Regular,
   Flow24Regular
 } from '@fluentui/react-icons';
+import Foo from './Foo';
 
 type NavItem = {
   label: string;
@@ -145,6 +146,7 @@ class App extends React.Component {
                 <Text className="brand-name" weight="semibold">
                   SemTalk
                 </Text>
+                <Foo></Foo>
               </div>
             </div>
 
