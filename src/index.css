@@ -93,6 +93,12 @@ a {
   background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
   box-shadow: 0 10px 24px rgba(37, 99, 235, 0.28);
   flex: 0 0 auto;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.brand-mark:hover {
+  transform: scale(1.15) rotate(8deg);
+  color: #0078d4;
 }
 
 .brand-name {
