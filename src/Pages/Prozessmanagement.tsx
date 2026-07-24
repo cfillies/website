@@ -1,12 +1,5 @@
 import React from "react";
-import { Title1, Title2, Text, Card } from "@fluentui/react-components";
-import {
-  Flow24Regular,
-  CheckmarkCircle24Regular,
-  PeopleCommunity24Regular,
-  ClipboardTask24Regular,
-  ShareScreenPerson24Regular,
-} from "@fluentui/react-icons";
+import { Title1, Title2, Text } from "@fluentui/react-components";
 
 class Prozessmanagement extends React.Component {
   render() {
@@ -17,95 +10,132 @@ class Prozessmanagement extends React.Component {
         <section className="pm-hero section">
           <div className="section-content">
             <Title1>Prozessmanagement</Title1>
-            <p>
-            <Text className="pm-intro">
-              Effektives Prozessmanagement schafft Transparenz, verbessert Abläufe und verbindet Wissen,
-              Rollen und Systeme. SemTalk unterstützt Sie dabei, Prozesse klar zu modellieren und
-              organisationsweit bereitzustellen.
+            <p><Text className="pm-intro">
+              Ein wirkungsvolles Prozessmanagement beginnt mit einem klaren Verständnis darüber,
+              wie Abläufe in einer Organisation tatsächlich funktionieren. Prozessmodelle helfen
+              dabei, komplexe Tätigkeiten sichtbar zu machen, Verantwortlichkeiten zu klären und
+              Schnittstellen zwischen Rollen, Systemen und Daten transparent darzustellen.
+            </Text></p>
+          </div>
+        </section>
+
+        {/* 1. Grundlagen */}
+        <section className="pm-section section">
+          <div className="section-content">
+            <Title2>1. Grundlagen der Prozessmodellierung</Title2>
+            <p><Text>
+              Um ein aussagekräftiges Prozessmodell zu erstellen, benötigt man einige grundlegende
+              Informationen: Wie beginnt ein Prozess? Welche Aufgaben werden ausgeführt und in
+              welcher Reihenfolge? Wo gibt es Entscheidungspunkte? Welche Rollen oder
+              organisatorischen Einheiten sind beteiligt? Und welche Daten werden benötigt,
+              erzeugt oder weitergegeben?
             </Text>
-            </p>
-          </div>
-        </section>
-
-        {/* Grid Section */}
-        <section className="pm-section section">
-          <div className="section-content">
-            <Title2>Was Sie mit SemTalk erreichen</Title2>
-
-            <div className="pm-grid">
-              <Card className="pm-card">
-                <Flow24Regular className="pm-icon" />
-                <h3>Prozessmodellierung</h3>
-                <p>
-                  Modellieren Sie Prozesse in BPMN oder anderen Notationen und speichern Sie Modelle zentral
-                  in SharePoint oder MongoDB.
-                </p>
-              </Card>
-
-              <Card className="pm-card">
-                <ShareScreenPerson24Regular className="pm-icon" />
-                <h3>Prozess‑Portal</h3>
-                <p>
-                  Stellen Sie Diagramme, Hintergrundinformationen und verknüpfte Inhalte für Leser in Teams,
-                  SharePoint oder Webseiten bereit.
-                </p>
-              </Card>
-
-              <Card className="pm-card">
-                <ClipboardTask24Regular className="pm-icon" />
-                <h3>Projektpläne</h3>
-                <p>
-                  Nutzen Sie Prozessmodelle als Blaupause für wiederkehrende Projekte und übernehmen Sie
-                  Aufgaben direkt in Microsoft Planner.
-                </p>
-              </Card>
-
-              <Card className="pm-card">
-                <CheckmarkCircle24Regular className="pm-icon" />
-                <h3>Workflows</h3>
-                <p>
-                  Modellieren Sie Workflows in Visio, exportieren Sie sie nach Power Automate und verknüpfen
-                  Sie sie im Prozess‑Portal.
-                </p>
-              </Card>
-
-              <Card className="pm-card">
-                <PeopleCommunity24Regular className="pm-icon" />
-                <h3>Prozess‑Teams</h3>
-                <p>
-                  Fachliche und technische Experten arbeiten gemeinsam an Prozessen. Das Process Office
-                  koordiniert Modelle und Verantwortlichkeiten.
-                </p>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* LinkedIn Feed */}
-        <section className="pm-section section">
-          <div className="section-content">
-            <Title2>Aktuelle LinkedIn‑Posts</Title2>
-
-            <div className="linkedin-feed">
-              <iframe
-                src="https://www.linkedin.com/embed/feed/update/urn:li:share:YOUR_POST_ID"
-                height="400"
-                width="100%"
-                frameBorder="0"
-                allowFullScreen={true}
-              ></iframe>
-            </div>
-
             <Text>
-              Weitere Beiträge finden Sie auf unserem{" "}
-              <a
-                href="https://www.linkedin.com/company/semtalk/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn‑Profil
-              </a>.
+              Diese Inhalte bilden die Basis für ein Modell, das sowohl verständlich als auch
+              praktisch nutzbar ist. Visuelle Darstellungen erleichtern das Verständnis für den
+              Prozess als Ganzes und ermöglichen es Beteiligten, ihre Aufgaben besser einzuordnen.
+            </Text></p>
+          </div>
+        </section>
+
+        {/* 2. Ergänzende Informationen */}
+        <section className="pm-section section">
+          <div className="section-content">
+            <Title2>2. Ergänzende Informationen</Title2>
+            <p><Text>
+              Kommentare und verlinkte Dokumente erhöhen die Verständlichkeit eines Modells,
+              ohne das Diagramm zu überladen. Sie dokumentieren Ausnahmen, Varianten, Hinweise
+              oder weiterführende Informationen wie Checklisten, Richtlinien oder Screenshots
+              aus IT‑Systemen.
             </Text>
+            <Text>
+              Diese Elemente schaffen einen direkten Bezug zur praktischen Ausführung und machen
+              Modelle zu wertvollen Arbeitsinstrumenten.
+            </Text></p>
+          </div>
+        </section>
+
+        {/* 3. Navigation */}
+        <section className="pm-section section">
+          <div className="section-content">
+            <Title2>3. Navigation in Prozessmodellen</Title2>
+            <p><Text>
+              Mit zunehmender Detailtiefe entstehen größere Modelllandschaften. Damit Modelle
+              trotz ihrer Komplexität gut nutzbar bleiben, braucht es klare Navigationsmechanismen:
+              Hierarchien, Verfeinerungen, Diagrammbäume, Brotkrumenpfade, Suchfunktionen und
+              Navigation über Objekteigenschaften.
+            </Text>
+            <Text>
+              Diese Funktionen ermöglichen es, auch umfangreiche Prozesswelten effizient zu
+              erkunden und relevante Inhalte schnell zu finden.
+            </Text></p>
+          </div>
+        </section>
+
+        {/* 4. Veröffentlichung */}
+        <section className="pm-section section">
+          <div className="section-content">
+            <Title2>4. Veröffentlichung von Prozessmodellen</Title2>
+            <p><Text>
+              Damit Prozesswissen nicht isoliert bleibt, müssen Modelle für andere zugänglich
+              gemacht werden. PDF‑Formate reichen dafür oft nicht aus, da sie keine Navigation
+              oder Interaktion ermöglichen.
+            </Text>
+            <Text>
+              Moderne Prozessportale stellen Modelle strukturiert bereit, ermöglichen kontrollierte
+              Zugriffe und bieten dieselben Navigationsfunktionen wie der Editor.
+            </Text></p>
+          </div>
+        </section>
+
+        {/* 5. Reporting */}
+        <section className="pm-section section">
+          <div className="section-content">
+            <Title2>5. Reporting auf Prozessmodellen</Title2>
+            <p><Text>
+              Prozessmodelle enthalten wertvolle Informationen, die sich auswerten lassen:
+              Welche Rolle bearbeitet welche Aufgabe? Welche Formulare oder Systeme werden wo
+              genutzt? Welche Prozesse sind betroffen, wenn ein System geändert wird?
+            </Text>
+            <Text>
+              Reports basieren auf dem Metamodell der Modellierungsmethode und ermöglichen
+              tabellarische Übersichten, die zur Analyse und Weiterverarbeitung genutzt werden
+              können.
+            </Text></p>
+          </div>
+        </section>
+
+        {/* 6. KI-Unterstützung */}
+        <section className="pm-section section">
+          <div className="section-content">
+            <Title2>6. KI‑Unterstützung in der Prozessmodellierung</Title2>
+            <p><Text>
+              Künstliche Intelligenz kann sowohl die Modellierung als auch die Nutzung von
+              Prozesswissen unterstützen. Chatbots können BPMN‑Diagramme generieren,
+              Modellschritte vorschlagen oder Modellwissen als Kontext nutzen, um präzisere
+              Antworten zu geben.
+            </Text>
+            <Text>
+              Dadurch verringern sich Halluzinationen, und die Ergebnisse beziehen sich stärker
+              auf die tatsächlichen Abläufe der Organisation.
+            </Text></p>
+          </div>
+        </section>
+
+        {/* 7. Prozessbot */}
+        <section className="pm-section section">
+          <div className="section-content">
+            <Title2>7. Der SemTalk Prozessbot</Title2>
+            <p><Text>
+              Der SemTalk Prozessbot verbindet bestehendes Prozesswissen mit KI‑Werkzeugen wie
+              Microsoft Copilot oder ChatGPT. Er greift direkt auf Modellinhalte zu – inklusive
+              Rollen, Freigaben und Abhängigkeiten – und liefert konsistente Antworten im
+              Arbeitsalltag.
+            </Text>
+            <Text>
+              Der MCP‑Server stellt das Prozesswissen zentral bereit, on‑premise oder in Azure,
+              und ermöglicht die Nutzung durch Bots, Portale oder agentische KI‑Systeme.
+            </Text></p>
           </div>
         </section>
 
