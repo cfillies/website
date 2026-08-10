@@ -699,3 +699,75 @@ a {
   }
 }
 
+/* Global page layout */
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Section spacing (wie Startseite) */
+.section {
+  padding: 48px 0;
+}
+
+/* Textbreite wie Startseite */
+.section-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Global content wrapper for all major sections */
+.site-header,
+.hero-grid,
+.value-band,
+.usecases-section,
+.logo-band,
+.three-column,
+.cta-band,
+.site-footer {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Vertical spacing between major sections */
+.site-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.hero-grid {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.value-band {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.usecases-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.logo-band {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.three-column {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.cta-band {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.site-footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
