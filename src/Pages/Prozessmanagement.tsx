@@ -1,6 +1,15 @@
 import React from "react";
 import { Title1, Title2, Text } from "@fluentui/react-components";
 
+import {
+  Flow24Regular,
+  Document24Regular,
+  Search24Regular,
+  Info24Regular,
+  BrainCircuit24Regular,
+  Bot24Regular
+} from "@fluentui/react-icons";
+
 class Prozessmanagement extends React.Component {
   render() {
     return (
@@ -8,7 +17,7 @@ class Prozessmanagement extends React.Component {
 
         {/* Hero */}
         <section className="section">
-          <div className="section-content">
+          <div className="section-content pm-card">
             <Title1>Prozessmanagement</Title1>
             <p>
             <Text>
@@ -25,39 +34,55 @@ class Prozessmanagement extends React.Component {
 
         {/* Einführung */}
         <section className="section">
-          <div className="section-content">
-            <Title2>Einführung in die Prozessmodellierung</Title2>
-            <p>
-            <Text>
+  <div className="pm-grid">
+
+    <div className="section-content pm-card">
+      <div className="pm-heading">
+  <Flow24Regular className="pm-icon" />
+  <Title2>Einführung in die Prozessmodellierung</Title2>
+</div>
+
+      <p>
+      <Text>
               Prozessmodelle bilden die Grundlage für ein systematisches Verständnis von Abläufen.
               Sie helfen dabei, Tätigkeiten, Verantwortlichkeiten und Abhängigkeiten sichtbar zu
               machen und schaffen eine gemeinsame Basis für Analyse, Optimierung und Kommunikation.
             </Text>
             </p>
-          </div>
-        </section>
+  </div>          
+          
 
         {/* Ziele */}
-        <section className="section">
-          <div className="section-content">
-            <Title2>Ziele und Einsatzbereiche von Prozessmodellen</Title2>
-            <p>
-            <Text>
+        <div className="section-content pm-card">
+      <div className="pm-heading">
+  <Info24Regular className="pm-icon" />
+  <Title2>Ziele und Einsatzbereiche von Prozessmodellen</Title2>
+</div>
+
+      <Text>
+           <p>
               Je nach Zielsetzung können Prozessmodelle unterschiedliche Anforderungen erfüllen.
               Modelle, die zur Ausführung automatisierter Workflows dienen, benötigen andere
               Informationen als Modelle, die zur Analyse, Diskussion oder Verbesserung organisatorischer
               Abläufe eingesetzt werden. Für die Gestaltung und das Verständnis von Geschäftsprozessen
               steht die klare, visuelle Darstellung der Abläufe im Vordergrund.
-            </Text>
-            </p>
-          </div>
+            </p></Text>
+            
+        </div>
+        </div>
+
         </section>
 
         {/* Grundlagen */}
         <section className="section">
-          <div className="section-content">
-            <Title2>Grundlegende Informationen für ein Prozessmodell</Title2>
+          <div className="section-content pm-card">
+            <div className="pm-heading">
+             <Document24Regular className="pm-icon" />
+              <Title2>Grundlegende Informationen für ein Prozessmodell</Title2>
+            </div>
+
             <p>
+            <div className="pm-grid">
             <Text>
               Für die Beschreibung eines Geschäftsprozesses werden bestimmte grundlegende Informationen
               benötigt. Dazu gehören der Auslöser des Prozesses, die einzelnen Aufgaben und ihre
@@ -70,14 +95,24 @@ class Prozessmanagement extends React.Component {
               praktisch nutzbar ist. Häufig entsteht dabei eine Verbindung zu eingesetzten IT‑Systemen,
               Formularen oder anderen Hilfsmitteln.
             </Text>
+            </div>
             </p>
+            <img
+              src="/assets/bpmn-example.png"
+              alt="Beispiel eines Prozessmodells"
+              className="pm-image"
+            />
           </div>
         </section>
 
         {/* Ergänzende Informationen */}
         <section className="section">
-          <div className="section-content">
-            <Title2>Ergänzende Informationen zur Verbesserung der Verständlichkeit</Title2>
+          <div className="section-content pm-card">
+            <div className="pm-heading">
+              <Search24Regular className="pm-icon" />
+              <Title2>Ergänzende Informationen zur Verbesserung der Verständlichkeit</Title2>
+            </div>
+
             <p>
             <Text>
               Um die Aussagekraft eines Prozessmodells zu erhöhen, werden ergänzende Elemente wie
@@ -96,8 +131,12 @@ class Prozessmanagement extends React.Component {
 
         {/* Navigation */}
         <section className="section">
-          <div className="section-content">
-            <Title2>Umgang mit komplexen Prozesslandschaften</Title2>
+          <div className="section-content pm-card">
+            <div className="pm-heading">
+              <Flow24Regular className="pm-icon" />
+              <Title2>Umgang mit komplexen Prozesslandschaften</Title2>
+            </div>
+
             <p>
             <Text>
               Mit zunehmender Detailtiefe können Prozessmodelle sehr umfangreich werden. Um diese
@@ -115,8 +154,12 @@ class Prozessmanagement extends React.Component {
 
         {/* Veröffentlichung */}
         <section className="section">
-          <div className="section-content">
-            <Title2>Veröffentlichung von Prozessmodellen</Title2>
+          <div className="section-content pm-card">
+            <div className="pm-heading">
+              <Document24Regular className="pm-icon" />
+              <Title2>Veröffentlichung von Prozessmodellen</Title2>
+            </div>
+
             <p>
             <Text>
               Die Bereitstellung von Prozessmodellen erfolgt idealerweise über ein Prozessportal.
@@ -131,8 +174,12 @@ class Prozessmanagement extends React.Component {
 
         {/* Reporting */}
         <section className="section">
-          <div className="section-content">
-            <Title2>Reporting auf Basis von Prozessmodellen</Title2>
+          <div className="section-content pm-card">
+            <div className="pm-heading">
+              <Info24Regular className="pm-icon" />
+              <Title2>Reporting auf Basis von Prozessmodellen</Title2>
+            </div>
+
             <p>
             <Text>
               Prozessmodelle bieten eine wertvolle Grundlage für Reporting. Aus ihnen lassen sich
@@ -151,8 +198,12 @@ class Prozessmanagement extends React.Component {
 
         {/* KI */}
         <section className="section">
-          <div className="section-content">
-            <Title2>Prozessmodelle im Kontext künstlicher Intelligenz</Title2>
+          <div className="section-content pm-card">
+            <div className="pm-heading">
+              <BrainCircuit24Regular className="pm-icon" />
+              <Title2>Prozessmodelle im Kontext künstlicher Intelligenz</Title2>
+            </div>
+
             <p>
             <Text>
               Künstliche Intelligenz kann Prozesswissen nutzen, um präzisere Antworten zu geben,
@@ -166,8 +217,12 @@ class Prozessmanagement extends React.Component {
 
         {/* Prozessbot */}
         <section className="section">
-          <div className="section-content">
-            <Title2>Der SemTalk Prozessbot</Title2>
+          <div className="section-content pm-card">
+            <div className="pm-heading">
+              <Bot24Regular className="pm-icon" />
+              <Title2>Der SemTalk Prozessbot</Title2>
+            </div>
+
             <p>
             <Text>
               Der SemTalk Prozessbot verbindet Prozessmodelle mit modernen KI‑Werkzeugen. Er greift
