@@ -9,12 +9,13 @@ class Footer extends React.Component {
         <div className="footer-brand">
           <div className="brand-lockup">
             <div className="brand-mark">
-              <Sparkle24Regular />
+            <img src="/assets/logo.png" alt="SemTalk Logo" />
             </div>
             <Text className="brand-name" weight="semibold">
               SemTalk
             </Text>
           </div>
+
           <p>
             SemTalk ist die Plattform für modernes Prozessmanagement und die zentrale Wissensbasis
             für Menschen und KI-Agenten.

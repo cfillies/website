@@ -84,19 +84,27 @@ a {
 .brand-mark {
   background: linear-gradient(135deg, var(--color-primary-blue), var(--color-blue-dark));
   box-shadow: 0 10px 24px rgba(31, 79, 168, 0.28);
-  border-radius: 10px;
-  width: 34px;
-  height: 34px;
+  width: 48px;
+  height: 48px;
   display: grid;
   place-items: center;
-  color: var(--color-white);
+  border-radius: 10px;
+  overflow: hidden;
   transition: transform 0.25s ease, color 0.25s ease;
 }
 
-.brand-mark:hover {
-  transform: scale(1.15) rotate(8deg);
-  color: var(--color-primary-yellow);
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.25s ease;
 }
+
+.brand-mark:hover img {
+  transform: scale(1.15) rotate(8deg);
+}
+
 
 .brand-name {
   font-size: 1.2rem;

@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Text } from "@fluentui/react-components";
 import { Sparkle24Regular } from "@fluentui/react-icons";
-import Foo from "./Foo";
 import { navItems } from "../App";
 import { Link } from "react-router-dom";
 
@@ -11,15 +10,14 @@ class Header extends React.Component {
       <header className="site-header">
 
         <div className="brand-lockup">
-          <Link to="/"  className="brand-mark">
-            <Sparkle24Regular />
+          <Link to="/" className="brand-mark">
+          <img src="/assets/logo.png" alt="SemTalk Logo" />
           </Link>
-
           <div>
             <Text className="brand-name" weight="semibold">
               SemTalk
             </Text>
-            <Foo />
+            
           </div>
         </div>
 

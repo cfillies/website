@@ -25,7 +25,7 @@ import {
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Foo from './Foo';
+
 import Header from "./Components/Header";
 import HeroSection from "./Components/HeroSection";
 import ValueBand from "./Components/ValueBand";
