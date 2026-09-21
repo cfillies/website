@@ -15,35 +15,56 @@ class Prozessmanagement extends React.Component {
     return (
       <div className="content-shell process-page">
 
-        {/* Hero */}
-        <section className="section">
-          <div className="section-content pm-card">
-            <Title1>Prozessmanagement</Title1>
-            <p>
-            <Text>
-              Ein wirkungsvolles Prozessmanagement basiert auf einem klaren Verständnis darüber,
-              wie Abläufe innerhalb einer Organisation tatsächlich funktionieren. Prozessmodelle
-              dienen dazu, Tätigkeiten, Verantwortlichkeiten und Schnittstellen strukturiert
-              darzustellen und so ein gemeinsames Verständnis über den gesamten Prozess zu schaffen.
-              Sie unterstützen dabei, komplexe Abläufe nachvollziehbar zu machen und ermöglichen es,
-              Optimierungspotenziale zu erkennen.
-            </Text>
-            </p>
-          </div>
-        </section>
+        {/* Inhaltsverzeichnis + Prozessmanagement (2-Spalten-Grid) */}
+<section className="section">
+  <div className="pm-grid-2col">
 
-        {/* Einführung */}
-        <section className="section">
-  <div className="pm-grid">
+    {/* Inhaltsverzeichnis (links) */}
+    <div className="section-content pm-card pm-toc">
+      <Title2>Inhalt</Title2>
+      <ul>
+        <li><a href="#einführung">Einführung in die Prozessmodellierung</a></li>
+        <li><a href="#ziele">Ziele und Einsatzbereiche</a></li>
+        <li><a href="#grundlagen">Grundlegende Informationen</a></li>
+        <li><a href="#ergänzende-info">Ergänzende Informationen</a></li>
+        <li><a href="#navigation">Navigation</a></li>
+        <li><a href="#veröffentlichung">Veröffentlichung</a></li>
+        <li><a href="#reporting">Reporting</a></li>
+        <li><a href="#ki">KI</a></li>
+        <li><a href="#prozessbot">Prozessbot</a></li>
+      </ul>
+    </div>
 
+    {/* Prozessmanagement (rechts) */}
     <div className="section-content pm-card">
-      <div className="pm-heading">
-  <Flow24Regular className="pm-icon" />
-  <Title2>Einführung in die Prozessmodellierung</Title2>
-</div>
-
+      <Title1>Prozessmanagement</Title1>
       <p>
-      <Text>
+        <Text>
+          Ein wirkungsvolles Prozessmanagement basiert auf einem klaren Verständnis darüber,
+          wie Abläufe innerhalb einer Organisation tatsächlich funktionieren. Prozessmodelle
+          dienen dazu, Tätigkeiten, Verantwortlichkeiten und Schnittstellen strukturiert
+          darzustellen und so ein gemeinsames Verständnis über den gesamten Prozess zu schaffen.
+          Sie unterstützen dabei, komplexe Abläufe nachvollziehbar zu machen und ermöglichen es,
+          Optimierungspotenziale zu erkennen.
+        </Text>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+        <section className="section">
+  <div className="pm-grid-2col">
+
+    {/* Einführung (links) */}
+    <div id="einführung" className="section-content pm-card">
+      <div className="pm-heading">
+        <Flow24Regular className="pm-icon" />
+        <Title2>Einführung in die Prozessmodellierung</Title2>
+      </div>
+      <p>
+        <Text>
               Prozessmodelle bilden die Grundlage für ein systematisches Verständnis von Abläufen.
               Sie helfen dabei, Tätigkeiten, Verantwortlichkeiten und Abhängigkeiten sichtbar zu
               machen und schaffen eine gemeinsame Basis für Analyse, Optimierung und Kommunikation.
@@ -52,14 +73,13 @@ class Prozessmanagement extends React.Component {
   </div>          
           
 
-        {/* Ziele */}
-        <div className="section-content pm-card">
+        {/* Ziele (rechts) */}
+    <div id="ziele" className="section-content pm-card">
       <div className="pm-heading">
-  <Info24Regular className="pm-icon" />
-  <Title2>Ziele und Einsatzbereiche von Prozessmodellen</Title2>
-</div>
-
-      <Text>
+        <Info24Regular className="pm-icon" />
+        <Title2>Ziele und Einsatzbereiche von Prozessmodellen</Title2>
+      </div>
+        <Text>
            <p>
               Je nach Zielsetzung können Prozessmodelle unterschiedliche Anforderungen erfüllen.
               Modelle, die zur Ausführung automatisierter Workflows dienen, benötigen andere

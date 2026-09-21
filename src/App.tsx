@@ -194,7 +194,7 @@ class App extends React.Component {
               <Route path="/microsoft-365" element={<Microsoft365 />} />
               <Route path="/branchen" element={<Branchen />} />
               <Route path="/ressourcen" element={<Ressourcen />} />
-              <Route path="/ueber-uns" element={<UeberUns />} />
+              <Route path="/über-uns" element={<UeberUns />} />
 
             </Routes>
           </main>

@@ -1,6 +1,8 @@
 import React from "react";
 import { Text } from "@fluentui/react-components";
 import { Sparkle24Regular } from "@fluentui/react-icons";
+import { Link } from "react-router-dom";
+
 
 class Footer extends React.Component {
   render() {
@@ -49,7 +51,7 @@ class Footer extends React.Component {
 
           <div>
             <Text weight="semibold">Unternehmen</Text>
-            <a href="#">Über uns</a>
+            <Link to="/über-uns">Über uns</Link>
             <a href="#">Kunden</a>
             <a href="#">Partner</a>
             <a href="#">Karriere</a>
