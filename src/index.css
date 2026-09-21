@@ -738,10 +738,9 @@ a {
 }
 
 .process-page {
-  background:
-    radial-gradient(circle at top center, rgba(244, 195, 0, 0.08), transparent 30%),
-    var(--color-white);
+  background: var(--color-white);
 }
+
 
 .pm-card {
   background: var(--color-white);
@@ -775,4 +774,31 @@ a {
   .pm-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.pm-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.pm-toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pm-toc li {
+  margin: 6px 0;
+}
+
+.pm-toc a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pm-toc a:hover {
+  text-decoration: underline;
 }
