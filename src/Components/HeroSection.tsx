@@ -90,14 +90,57 @@ class HeroSection extends React.Component {
 
           <Card className="stack-card stack-knowledge">
             <Subtitle1 className="stack-title">Unternehmenswissen</Subtitle1>
+
             <div className="knowledge-grid">
-              <span>Prozesse</span>
-              <span>Rollen & Organisation</span>
-              <span>Dokumente & Informationen</span>
-              <span>Begriffe & Ontologien</span>
-              <span>Systeme & Daten</span>
+
+              <button
+                type="button"
+                className="knowledge-btn"
+                aria-label="Prozesse"
+                onClick={() => (window.location.href = "/prozessmanagement")}
+              >
+                Prozesse
+              </button>
+
+              <button
+                type="button"
+                className="knowledge-btn"
+                aria-label="Rollen und Organisation"
+                onClick={() => (window.location.href = "/unternehmenswissen")}
+              >
+                Rollen &amp; Organisation
+              </button>
+
+              <button
+                type="button"
+                className="knowledge-btn"
+                aria-label="Dokumente und Informationen"
+                onClick={() => (window.location.href = "/ressourcen")}
+              >
+                Dokumente &amp; Informationen
+              </button>
+
+              <button
+                type="button"
+                className="knowledge-btn"
+                aria-label="Begriffe und Ontologien"
+                onClick={() => (window.location.href = "/unternehmenswissen")}
+              >
+                Begriffe &amp; Ontologien
+              </button>
+
+              <button
+                type="button"
+                className="knowledge-btn"
+                aria-label="Systeme und Daten"
+                onClick={() => (window.location.href = "/microsoft365")}
+              >
+                Systeme &amp; Daten
+              </button>
+
             </div>
           </Card>
+
 
           <Card className="stack-card stack-modeling">
             <Subtitle1 className="stack-title">Prozessmodellierung mit SemTalk</Subtitle1>
