@@ -14,48 +14,49 @@ class Prozessmanagement extends React.Component {
   render() {
     return (
       <div className="content-shell process-page">
+          <a id="top"></a>
 
-        {/* Inhaltsverzeichnis + Prozessmanagement (2-Spalten-Grid) */}
-<section className="section">
-  <div className="pm-grid-2col">
+      {/* Inhaltsverzeichnis + Prozessmanagement (2-Spalten-Grid) */}
+      <section className="section">
+          <div className="pm-grid-2col">
 
-    {/* Inhaltsverzeichnis (links) */}
-    <div className="section-content pm-card pm-toc">
-      <Title2>Inhalt</Title2>
-      <ul>
-        <li><a href="#einführung">Einführung in die Prozessmodellierung</a></li>
-        <li><a href="#ziele">Ziele und Einsatzbereiche</a></li>
-        <li><a href="#grundlagen">Grundlegende Informationen</a></li>
-        <li><a href="#ergänzende-info">Ergänzende Informationen</a></li>
-        <li><a href="#navigation">Navigation</a></li>
-        <li><a href="#veröffentlichung">Veröffentlichung</a></li>
-        <li><a href="#reporting">Reporting</a></li>
-        <li><a href="#ki">KI</a></li>
-        <li><a href="#prozessbot">Prozessbot</a></li>
-      </ul>
-    </div>
+            {/* Inhaltsverzeichnis (links) */}
+            <div className="section-content pm-card pm-toc">
+              <Title2>Inhalt</Title2>
+              <ul>
+                <li><a href="#einführung">Einführung in die Prozessmodellierung</a></li>
+                <li><a href="#ziele">Ziele und Einsatzbereiche</a></li>
+                <li><a href="#grundlagen">Grundlegende Informationen</a></li>
+                <li><a href="#ergänzende-info">Ergänzende Informationen</a></li>
+                <li><a href="#navigation">Navigation</a></li>
+                <li><a href="#veröffentlichung">Veröffentlichung</a></li>
+                <li><a href="#reporting">Reporting</a></li>
+                <li><a href="#ki">KI</a></li>
+                <li><a href="#prozessbot">Prozessbot</a></li>
+              </ul>
+            </div>
 
-    {/* Prozessmanagement (rechts) */}
-    <div className="section-content pm-card">
-      <Title1>Prozessmanagement</Title1>
-      <p>
-        <Text>
-          Ein wirkungsvolles Prozessmanagement basiert auf einem klaren Verständnis darüber,
-          wie Abläufe innerhalb einer Organisation tatsächlich funktionieren. Prozessmodelle
-          dienen dazu, Tätigkeiten, Verantwortlichkeiten und Schnittstellen strukturiert
-          darzustellen und so ein gemeinsames Verständnis über den gesamten Prozess zu schaffen.
-          Sie unterstützen dabei, komplexe Abläufe nachvollziehbar zu machen und ermöglichen es,
-          Optimierungspotenziale zu erkennen.
-        </Text>
-      </p>
-    </div>
+            {/* Prozessmanagement (rechts) */}
+            <div className="section-content pm-card">
+              <Title1>Prozessmanagement</Title1>
+              <p>
+                <Text>
+                  Ein wirkungsvolles Prozessmanagement basiert auf einem klaren Verständnis darüber,
+                  wie Abläufe innerhalb einer Organisation tatsächlich funktionieren. Prozessmodelle
+                  dienen dazu, Tätigkeiten, Verantwortlichkeiten und Schnittstellen strukturiert
+                  darzustellen und so ein gemeinsames Verständnis über den gesamten Prozess zu schaffen.
+                  Sie unterstützen dabei, komplexe Abläufe nachvollziehbar zu machen und ermöglichen es,
+                  Optimierungspotenziale zu erkennen.
+                </Text>
+              </p>
+            </div>
 
-  </div>
-</section>
+          </div>
+      </section>
 
 
-        <section className="section">
-  <div className="pm-grid-2col">
+      <section className="section">
+      <div className="pm-grid-2col">
 
     {/* Einführung (links) */}
     <div id="einführung" className="section-content pm-card">
@@ -70,7 +71,12 @@ class Prozessmanagement extends React.Component {
               machen und schaffen eine gemeinsame Basis für Analyse, Optimierung und Kommunikation.
             </Text>
             </p>
-  </div>          
+            <div className="pm-back-to-top">
+            <a href="#top">↑ Nach oben</a>
+            </div>
+
+
+    </div>          
           
 
         {/* Ziele (rechts) */}
@@ -87,15 +93,19 @@ class Prozessmanagement extends React.Component {
               Abläufe eingesetzt werden. Für die Gestaltung und das Verständnis von Geschäftsprozessen
               steht die klare, visuelle Darstellung der Abläufe im Vordergrund.
             </p></Text>
+            <div className="pm-back-to-top">
+            <a href="#top">↑ Nach oben</a>
+            </div>
+
             
         </div>
-        </div>
+      </div>
 
         </section>
 
         {/* Grundlagen */}
         <section className="section">
-          <div className="section-content pm-card">
+          <div id="grundlagen"className="section-content pm-card">
             <div className="pm-heading">
              <Document24Regular className="pm-icon" />
               <Title2>Grundlegende Informationen für ein Prozessmodell</Title2>
@@ -122,12 +132,16 @@ class Prozessmanagement extends React.Component {
               alt="Beispiel eines Prozessmodells"
               className="pm-image"
             />
+            <div className="pm-back-to-top">
+            <a href="#top">↑ Nach oben</a>
+            </div>
           </div>
+          
         </section>
 
         {/* Ergänzende Informationen */}
         <section className="section">
-          <div className="section-content pm-card">
+          <div id="ergänzende-info" className="section-content pm-card">
             <div className="pm-heading">
               <Search24Regular className="pm-icon" />
               <Title2>Ergänzende Informationen zur Verbesserung der Verständlichkeit</Title2>
@@ -146,12 +160,15 @@ class Prozessmanagement extends React.Component {
               entfalten ihren vollen Nutzen insbesondere in interaktiven Prozessportalen.
             </Text>
             </p>
+            <div className="pm-back-to-top">
+            <a href="#top">↑ Nach oben</a>
+            </div>
           </div>
         </section>
 
         {/* Navigation */}
         <section className="section">
-          <div className="section-content pm-card">
+          <div id="navigation"className="section-content pm-card">
             <div className="pm-heading">
               <Flow24Regular className="pm-icon" />
               <Title2>Umgang mit komplexen Prozesslandschaften</Title2>
@@ -169,12 +186,15 @@ class Prozessmanagement extends React.Component {
               Modelllandschaften und erleichtern das Auffinden relevanter Inhalte.
             </Text>
             </p>
+            <div className="pm-back-to-top">
+            <a href="#top">↑ Nach oben</a>
+            </div>
           </div>
         </section>
 
         {/* Veröffentlichung */}
         <section className="section">
-          <div className="section-content pm-card">
+          <div id="veröffentlichung"className="section-content pm-card">
             <div className="pm-heading">
               <Document24Regular className="pm-icon" />
               <Title2>Veröffentlichung von Prozessmodellen</Title2>
@@ -189,12 +209,15 @@ class Prozessmanagement extends React.Component {
               veröffentlicht werden.
             </Text>
             </p>
+            <div className="pm-back-to-top">
+            <a href="#top">↑ Nach oben</a>
+            </div>
           </div>
         </section>
 
         {/* Reporting */}
         <section className="section">
-          <div className="section-content pm-card">
+          <div id="reporting"className="section-content pm-card">
             <div className="pm-heading">
               <Info24Regular className="pm-icon" />
               <Title2>Reporting auf Basis von Prozessmodellen</Title2>
@@ -213,12 +236,15 @@ class Prozessmanagement extends React.Component {
               werden.
             </Text>
             </p>
+            <div className="pm-back-to-top">
+            <a href="#top">↑ Nach oben</a>
+            </div>
           </div>
         </section>
 
         {/* KI */}
         <section className="section">
-          <div className="section-content pm-card">
+          <div id="ki"className="section-content pm-card">
             <div className="pm-heading">
               <BrainCircuit24Regular className="pm-icon" />
               <Title2>Prozessmodelle im Kontext künstlicher Intelligenz</Title2>
@@ -232,12 +258,15 @@ class Prozessmanagement extends React.Component {
               Prozesse gezielt zu verbessern oder zu automatisieren.
             </Text>
             </p>
+            <div className="pm-back-to-top">
+            <a href="#top">↑ Nach oben</a>
+            </div>
           </div>
         </section>
 
         {/* Prozessbot */}
         <section className="section">
-          <div className="section-content pm-card">
+          <div id="prozessbot"className="section-content pm-card">
             <div className="pm-heading">
               <Bot24Regular className="pm-icon" />
               <Title2>Der SemTalk Prozessbot</Title2>
@@ -255,6 +284,9 @@ class Prozessmanagement extends React.Component {
               eine sichere, kontrollierte Nutzung – sowohl in der Cloud als auch on‑premise.
             </Text>
             </p>
+            <div className="pm-back-to-top">
+            <a href="#top">↑ Nach oben</a>
+            </div>
           </div>
         </section>
 

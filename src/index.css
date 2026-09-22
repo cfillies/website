@@ -248,6 +248,34 @@ a {
   margin-top: 14px;
 }
 
+/* Übernehme das Aussehen der bisherigen .knowledge-grid span */
+.knowledge-grid .knowledge-btn {
+  /* gleiche visuelle Basis wie vorher */
+  background: var(--color-white);
+  border: 1px solid rgba(31, 79, 168, 0.18);
+  color: #172554;
+  border-radius: 14px;
+  padding: 10px 12px;
+
+  /* Button-Reset, damit kein native Button‑Look bleibt */
+  font: inherit;
+  text-align: left;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Fokus sichtbar, aber dezent */
+.knowledge-grid .knowledge-btn:focus {
+  outline: 3px solid rgba(31, 79, 168, 0.12);
+  outline-offset: 2px;
+}
+
+/* optional: Hover wie Link‑Unterstreichung (dezent) */
+.knowledge-grid .knowledge-btn:hover {
+  text-decoration: underline;
+}
+
 .model-preview {
   margin-top: 16px;
   border-radius: 16px;
@@ -802,3 +830,4 @@ a {
 .pm-toc a:hover {
   text-decoration: underline;
 }
+

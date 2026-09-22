@@ -77,7 +77,7 @@ export const navItems: NavItem[] = [
   { label: 'Microsoft 365' },
   { label: 'Branchen' },
   { label: 'Ressourcen' },
-  { label: 'Über uns' }
+  { label: 'Impressum' }
 ];
 
 
@@ -194,7 +194,7 @@ class App extends React.Component {
               <Route path="/microsoft-365" element={<Microsoft365 />} />
               <Route path="/branchen" element={<Branchen />} />
               <Route path="/ressourcen" element={<Ressourcen />} />
-              <Route path="/über-uns" element={<UeberUns />} />
+              <Route path="/Impressum" element={<UeberUns />} />
 
             </Routes>
           </main>
