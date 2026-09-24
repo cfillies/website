@@ -11,12 +11,22 @@ class CTASection extends React.Component {
         </div>
 
         <div className="cta-actions">
-          <Button appearance="secondary" size="large">
+          <Button
+            appearance="primary"
+            size="large"
+            className="cta-demo"
+            as="a"
+            href="https://www.semtation.de/testversion"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Demo anfordern
           </Button>
-          <Button appearance="transparent" size="large" className="cta-outline">
+
+          <Button appearance="transparent" size="large" className="cta-contact">
             Kontakt aufnehmen
           </Button>
+
         </div>
       </section>
     );

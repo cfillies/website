@@ -307,25 +307,25 @@ a {
   font-weight: 600;
 }
 
+/* Flow-Chips in Semtation-Farben */
 .flow-chip.start {
-  background: rgba(34, 197, 94, 0.12);
-  color: #166534;
+  background: rgba(244, 195, 0, 0.18); /* Gelb transparent */
+  color: var(--color-primary-yellow);
 }
 
 .flow-chip.task {
-  background: rgba(31, 79, 168, 0.12);
+  background: rgba(31, 79, 168, 0.18); /* Blau transparent */
   color: var(--color-primary-blue);
-
 }
 
 .flow-chip.decision {
-  background: rgba(168, 85, 247, 0.12);
-  color: #7c3aed;
+  background: rgba(15, 47, 99, 0.18); /* Dunkelblau transparent */
+  color: var(--color-blue-dark);
 }
 
 .flow-chip.end {
-  background: rgba(15, 23, 42, 0.08);
-  color: #0f172a;
+  background: rgba(169, 196, 232, 0.28); /* Hellblau transparent */
+  color: var(--color-blue-medium);
 }
 
 .value-band {
@@ -670,6 +670,15 @@ a {
   padding: 0 2rem;
 }
 
+/* Einheitlicher Seitenrahmen für Unterseiten */
+.process-page,
+.uw-page,
+.impressum-page {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 /* Section spacing (wie Startseite) */
 .section {
   padding: 48px 0;
@@ -677,7 +686,6 @@ a {
 
 /* Textbreite wie Startseite */
 .section-content {
-  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -769,6 +777,13 @@ a {
   background: var(--color-white);
 }
 
+/* Gemeinsame Maximalbreite für alle Boxen auf Unterseiten */
+.process-page .pm-card {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .pm-card {
   background: var(--color-white);
@@ -829,5 +844,104 @@ a {
 
 .pm-toc a:hover {
   text-decoration: underline;
+}
+
+/* KI-Agenten Buttons optisch wie die bisherigen span-Elemente */
+.agent-btn {
+  background: var(--color-white);
+  border: 1px solid rgba(31, 79, 168, 0.18);
+  color: #172554;
+  border-radius: 14px;
+  padding: 10px 12px;
+
+  /* Button-Reset */
+  font: inherit;
+  width: auto;
+  display: inline-block;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Hover-Effekt wie bei Links */
+.agent-btn:hover {
+  text-decoration: underline;
+}
+
+/* Fokus für Tastatur-Nutzer */
+.agent-btn:focus {
+  outline: 3px solid rgba(31, 79, 168, 0.12);
+  outline-offset: 2px;
+}
+
+/* CTA: Demo anfordern (weiß, blau) */
+.cta-demo {
+  background: var(--color-white) !important;
+  color: var(--color-primary-blue) !important;
+  border: 2px solid var(--color-primary-blue) !important;
+}
+
+.cta-demo:hover {
+  background: var(--color-blue-light) !important;
+  color: var(--color-blue-dark) !important;
+}
+
+/* CTA: Kontakt aufnehmen (blau, gelb) */
+.cta-contact {
+  background: linear-gradient(
+    135deg,
+    var(--color-blue-dark),
+    var(--color-primary-blue) 55%,
+    var(--color-blue-medium)
+  ) !important;
+  color: var(--color-primary-yellow) !important;
+  border: 2px solid var(--color-primary-yellow) !important;
+}
+
+.cta-contact:hover {
+  background: var(--color-primary-yellow) !important;
+  color: var(--color-black) !important;
+}
+
+/* Einheitlicher Seitenrahmen für Unterseiten */
+.process-page,
+.uw-page,
+.impressum-page {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Kompaktere Abstände zwischen Sections */
+.process-page .section,
+.uw-page .section,
+.impressum-page .section {
+  padding: 24px 0;
+}
+
+/* Weniger Abstand zwischen Boxen */
+.process-page .pm-card,
+.uw-page .pm-card,
+.impressum-page .pm-card {
+  margin-bottom: 24px;
+}
+
+/* Zweispaltige Layouts sollen exakt die gleiche Gesamtbreite haben wie eine Box */
+.process-page .pm-grid,
+.process-page .pm-grid-2col,
+.uw-page .pm-grid,
+.uw-page .pm-grid-2col,
+.impressum-page .pm-grid,
+.impressum-page .pm-grid-2col {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  gap: 24px;
+}
+
+/* Inhaltsverzeichnis soll exakt so breit sein wie eine Grid-Spalte */
+.process-page .pm-toc {
+  width: calc((1180px - 64px - 24px) / 2);
+  margin-left: 0;
+  margin-right: 0;
 }
 
