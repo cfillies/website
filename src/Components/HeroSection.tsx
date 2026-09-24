@@ -41,9 +41,18 @@ class HeroSection extends React.Component {
           </p>
 
           <div className="hero-actions">
-            <Button appearance="primary" size="large" className="primary-action">
+            <Button
+              appearance="primary"
+              size="large"
+              className="primary-action"
+              as="a"
+              href="https://www.semtation.de/testversion"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Demo anfordern
             </Button>
+
             <Button appearance="secondary" size="large" icon={<ArrowRight24Regular />}>
               Video ansehen
             </Button>
@@ -76,10 +85,29 @@ class HeroSection extends React.Component {
               <Text size={200}>Assistenz, Compliance, Wissen und Projekte</Text>
             </div>
             <div className="stack-items">
-              <span>Prozess-Assistent</span>
-              <span>Compliance-Agent</span>
-              <span>Wissens-Agent</span>
-              <span>Projekt-Agent</span>
+              <button 
+                type="button" 
+                className="agent-btn" 
+                aria-label="Prozesse"
+                onClick={() => (window.location.href = "/KIAgenten")}>
+                  Prozess-Assistent</button>
+              <button
+                type="button" 
+                className="agent-btn" 
+                aria-label="Compliance"
+                onClick={() => (window.location.href = "/KIAgenten")}>
+                  Compliance-Agent</button>
+              <button
+                type="button" 
+                className="agent-btn" 
+                aria-label="Wissen"
+                onClick={() => (window.location.href = "/KIAgenten")}>
+                  Wissens-Agent</button>
+              <button
+                type="button" 
+                className="agent-btn" 
+                aria-label="Projekt"
+                onClick={() => (window.location.href = "/KIAgenten")}>Projekt-Agent</button>
             </div>
           </Card>
 

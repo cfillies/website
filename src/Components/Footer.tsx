@@ -35,18 +35,18 @@ class Footer extends React.Component {
 
           <div>
             <Text weight="semibold">Lösungen</Text>
-            <a href="#">Prozessmanagement</a>
+            <a href="/prozessmanagement">Prozessmanagement</a>
             <a href="#">Enterprise Architecture</a>
-            <a href="#">Wissensmanagement</a>
-            <a href="#">KI & Automatisierung</a>
+            <a href="/unternehmenswissen">Wissensmanagement</a>
+            <a href="/ki-agenten">KI & Automatisierung</a>
           </div>
 
           <div>
             <Text weight="semibold">Ressourcen</Text>
-            <a href="#">Blog</a>
-            <a href="#">Webinare</a>
-            <a href="#">Whitepaper</a>
-            <a href="#">Dokumentation</a>
+            <a href="/Ressourcen">Blog</a>
+            <a href="/Ressourcen">Webinare</a>
+            <a href="/Ressourcen">Whitepaper</a>
+            <a href="/Ressourcen">Dokumentation</a>
           </div>
 
           <div>

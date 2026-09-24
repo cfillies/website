@@ -34,9 +34,18 @@ class Header extends React.Component {
         </nav>
 
         <div className="header-actions">
-          <Button appearance="primary" className="primary-action">
+          <Button
+            appearance="primary"
+            size="large"
+            className="primary-action"
+            as="a"
+            href="https://www.semtation.de/testversion"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Demo anfordern
           </Button>
+
           <Button appearance="transparent" className="lang-action">
             DE
           </Button>

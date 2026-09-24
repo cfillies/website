@@ -18,7 +18,7 @@ class Unternehmenswissen extends React.Component {
           <div className="pm-grid-2col">
 
             {/* Inhaltsverzeichnis (links) */}
-            <div className="section-content pm-card pm-toc">
+            <div className="pm-card pm-toc">
               <Title2>Inhalt</Title2>
               <ul>
                 <li><a href="#ontologien">Ontologien und Wissensgraphen</a></li>
@@ -29,7 +29,7 @@ class Unternehmenswissen extends React.Component {
             </div>
 
             {/* Unternehmenswissen (rechts) */}
-            <div className="section-content pm-card">
+            <div className="pm-card">
               <Title1>Unternehmenswissen</Title1>
               <p>
                 <Text>
@@ -42,6 +42,7 @@ class Unternehmenswissen extends React.Component {
 
           </div>
         </section>
+
 
 
         {/* Ontologie Einführung */}

@@ -78,7 +78,7 @@ class ThreeColumnSection extends React.Component {
             ))}
           </div>
           <div className="section-link compact">
-            <a href="#">Alle Ressourcen</a>
+            <a href="/Ressourcen">Alle Ressourcen</a>
             <ArrowRight24Regular />
           </div>
         </Card>

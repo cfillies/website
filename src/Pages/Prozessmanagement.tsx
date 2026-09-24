@@ -17,11 +17,11 @@ class Prozessmanagement extends React.Component {
           <a id="top"></a>
 
       {/* Inhaltsverzeichnis + Prozessmanagement (2-Spalten-Grid) */}
-      <section className="section">
+            <section className="section">
           <div className="pm-grid-2col">
 
             {/* Inhaltsverzeichnis (links) */}
-            <div className="section-content pm-card pm-toc">
+            <div className="pm-card pm-toc">
               <Title2>Inhalt</Title2>
               <ul>
                 <li><a href="#einführung">Einführung in die Prozessmodellierung</a></li>
@@ -52,7 +52,7 @@ class Prozessmanagement extends React.Component {
             </div>
 
           </div>
-      </section>
+        </section>
 
 
       <section className="section">
