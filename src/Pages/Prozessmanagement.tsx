@@ -1,5 +1,7 @@
 import React from "react";
 import { Title1, Title2, Text } from "@fluentui/react-components";
+import bpmnExample from "../assets/bpmn-example.png";
+
 
 import {
   Flow24Regular,
@@ -127,11 +129,11 @@ class Prozessmanagement extends React.Component {
             </Text>
             </div>
             </p>
-            <img
-              src="/assets/bpmn-example.png"
-              alt="Beispiel eines Prozessmodells"
-              className="pm-image"
-            />
+              <img
+                src={bpmnExample}
+                alt="Beispiel eines Prozessmodells"
+                className="pm-image"
+              />
             <div className="pm-back-to-top">
             <a href="#top">↑ Nach oben</a>
             </div>

@@ -2,6 +2,8 @@ import React from "react";
 import { Text } from "@fluentui/react-components";
 import { Sparkle24Regular } from "@fluentui/react-icons";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+
 
 
 class Footer extends React.Component {
@@ -11,7 +13,7 @@ class Footer extends React.Component {
         <div className="footer-brand">
           <div className="brand-lockup">
             <div className="brand-mark">
-            <img src="/assets/logo.png" alt="SemTalk Logo" />
+            <img src={logo} alt="SemTalk Logo" />
             </div>
             <Text className="brand-name" weight="semibold">
               SemTalk
