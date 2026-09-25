@@ -3,6 +3,8 @@ import { Button, Text } from "@fluentui/react-components";
 import { Sparkle24Regular } from "@fluentui/react-icons";
 import { navItems } from "../App";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";  // <- Import
+
 
 class Header extends React.Component {
   render() {
@@ -11,7 +13,7 @@ class Header extends React.Component {
 
         <div className="brand-lockup">
           <Link to="/" className="brand-mark">
-          <img src="/assets/logo.png" alt="SemTalk Logo" />
+          <img src={logo} alt="SemTalk Logo"/>
           </Link>
           <div>
             <Text className="brand-name" weight="semibold">
