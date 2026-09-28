@@ -54,7 +54,7 @@ class Footer extends React.Component {
           <div>
             <Text weight="semibold">Unternehmen</Text>
             <Link to="/Impressum">Impressum</Link>
-            <a href="#">Kunden</a>
+            <a href="/impressum#datenschutz">Datenschutzbestimmungen</a>
             <a href="#">Partner</a>
             <a href="#">Karriere</a>
           </div>

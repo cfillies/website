@@ -41,7 +41,7 @@ class Header extends React.Component {
             size="large"
             className="primary-action"
             as="a"
-            href="https://www.semtation.de/testversion"
+            href="/demo"
             target="_blank"
             rel="noopener noreferrer"
           >

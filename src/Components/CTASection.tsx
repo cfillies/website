@@ -16,7 +16,7 @@ class CTASection extends React.Component {
             size="large"
             className="cta-demo"
             as="a"
-            href="https://www.semtation.de/testversion"
+            href="/demo"
             target="_blank"
             rel="noopener noreferrer"
           >
