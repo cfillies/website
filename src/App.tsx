@@ -43,6 +43,9 @@ import Microsoft365 from "./Pages/Microsoft365";
 import Branchen from "./Pages/Branchen";
 import Ressourcen from "./Pages/Ressourcen";
 import UeberUns from "./Pages/UeberUns";
+import Demo from "./Pages/Demo";
+
+
 
 
 // Datentypen
@@ -195,6 +198,8 @@ class App extends React.Component {
               <Route path="/branchen" element={<Branchen />} />
               <Route path="/ressourcen" element={<Ressourcen />} />
               <Route path="/Impressum" element={<UeberUns />} />
+              <Route path="/demo" element={<Demo />} />
+
 
             </Routes>
           </main>
