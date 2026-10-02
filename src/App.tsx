@@ -44,6 +44,10 @@ import Branchen from "./Pages/Branchen";
 import Ressourcen from "./Pages/Ressourcen";
 import UeberUns from "./Pages/UeberUns";
 import Demo from "./Pages/Demo";
+import Datenschutzbestimmungen from "./Pages/Datenschutzbestimmungen";
+import Impressum from "./Pages/Impressum";
+
+
 
 
 
@@ -78,9 +82,9 @@ export const navItems: NavItem[] = [
   { label: 'Unternehmenswissen' },
   { label: 'KI-Agenten' },
   { label: 'Microsoft 365' },
-  { label: 'Branchen' },
-  { label: 'Ressourcen' },
-  { label: 'Impressum' }
+  { label: 'Produkte' },
+  { label: 'Ressourcen' }
+  
 ];
 
 
@@ -197,8 +201,11 @@ class App extends React.Component {
               <Route path="/microsoft-365" element={<Microsoft365 />} />
               <Route path="/branchen" element={<Branchen />} />
               <Route path="/ressourcen" element={<Ressourcen />} />
-              <Route path="/Impressum" element={<UeberUns />} />
+              <Route path="/ueber-uns" element={<UeberUns />} />
               <Route path="/demo" element={<Demo />} />
+              <Route path="/datenschutz" element={<Datenschutzbestimmungen />} />
+              <Route path="/impressum" element={<Impressum />} />
+
 
 
             </Routes>
