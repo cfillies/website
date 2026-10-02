@@ -32,7 +32,7 @@ class Footer extends React.Component {
             <a href="#">SemTalk Desktop</a>
             <a href="#">SemTalk Online</a>
             <a href="#">Add-Ons</a>
-            <a href="#">Preise</a>
+            <a href="/semtalk-online-teams-app">SemTalk Online in Microsoft365</a>
           </div>
 
           <div>
@@ -48,14 +48,14 @@ class Footer extends React.Component {
             <a href="/Ressourcen">Blog</a>
             <a href="/Ressourcen">Webinare</a>
             <a href="/Ressourcen">Whitepaper</a>
-            <a href="/Ressourcen">Dokumentation</a>
+            <a href="/semtalk-online-documentation-and-support">SemTalk Online Dokumentation</a>
           </div>
 
           <div>
             <Text weight="semibold">Unternehmen</Text>
             <Link to="/impressum">Impressum</Link>
             <a href="/datenschutz">Datenschutzbestimmungen</a>
-            <a href="#">Partner</a>
+            <a href="/terms-of-service-semtalk-online">Nutzungsbestimmungen SemTalk Online</a>
             <a href="#">Karriere</a>
           </div>
         </div>
