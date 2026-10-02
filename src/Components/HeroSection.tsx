@@ -89,25 +89,25 @@ class HeroSection extends React.Component {
                 type="button" 
                 className="agent-btn" 
                 aria-label="Prozesse"
-                onClick={() => (window.location.href = "/KIAgenten")}>
+                onClick={() => (window.location.href = "/ki-agenten")}>
                   Prozess-Assistent</button>
               <button
                 type="button" 
                 className="agent-btn" 
                 aria-label="Compliance"
-                onClick={() => (window.location.href = "/KIAgenten")}>
+                onClick={() => (window.location.href = "/ki-agenten")}>
                   Compliance-Agent</button>
               <button
                 type="button" 
                 className="agent-btn" 
                 aria-label="Wissen"
-                onClick={() => (window.location.href = "/KIAgenten")}>
+                onClick={() => (window.location.href = "/ki-agenten")}>
                   Wissens-Agent</button>
               <button
                 type="button" 
                 className="agent-btn" 
                 aria-label="Projekt"
-                onClick={() => (window.location.href = "/KIAgenten")}>Projekt-Agent</button>
+                onClick={() => (window.location.href = "/ki-agenten")}>Projekt-Agent</button>
             </div>
           </Card>
 
