@@ -58,6 +58,7 @@ import SemtalkOnlineDocumentationAndSupport from "./Pages/SemtalkOnlineDocumenta
 // Datentypen
 type NavItem = {
   label: string;
+  path: string;
 };
 
 type Benefit = {
@@ -81,14 +82,14 @@ type Resource = {
 
 // Navigationseinträge
 export const navItems: NavItem[] = [
-  { label: 'Prozessmanagement' },
-  { label: 'Unternehmenswissen' },
-  { label: 'KI-Agenten' },
-  { label: 'Microsoft 365' },
-  { label: 'Produkte' },
-  { label: 'Ressourcen' }
-  
+  { label: 'Prozessmanagement', path: '/prozessmanagement' },
+  { label: 'Unternehmenswissen', path: '/unternehmenswissen' },
+  { label: 'KI-Agenten', path: '/ki-agenten' },
+  { label: 'Microsoft 365', path: '/semtalk-online-teams-app' }, // ← NEU
+  { label: 'Produkte', path: '/branchen' },
+  { label: 'Ressourcen', path: '/ressourcen' }
 ];
+
 
 
 // Benefits

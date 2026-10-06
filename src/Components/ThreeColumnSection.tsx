@@ -33,34 +33,43 @@ class ThreeColumnSection extends React.Component {
           <Title2 className="info-title">So entsteht Mehrwert</Title2>
           <ol className="numbered-list">
             <li>
-              <span>1</span>
-              <div>
-                <strong>Prozesse modellieren</strong>
-                <Text block>Erfassen und strukturieren Sie Ihre Prozesse.</Text>
+              <div className="numbered-item">
+                <span className="numbered-icon">1</span>
+                <div className="numbered-body">
+                  <strong>Prozesse modellieren</strong>
+                  <Text block>Erfassen und strukturieren Sie Ihre Prozesse.</Text>
+                </div>
               </div>
             </li>
             <li>
-              <span>2</span>
-              <div>
-                <strong>Unternehmenswissen vernetzen</strong>
-                <Text block>Verknüpfen Sie relevante Informationen und Begriffe.</Text>
+              <div className="numbered-item">
+                <span className="numbered-icon">2</span>
+                <div className="numbered-body">
+                  <strong>Unternehmenswissen vernetzen</strong>
+                  <Text block>Verknüpfen Sie relevante Informationen und Begriffe.</Text>
+                </div>
               </div>
             </li>
             <li>
-              <span>3</span>
-              <div>
-                <strong>KI-Agenten befähigen</strong>
-                <Text block>Nutzen Sie das Wissen als Kontext für KI und Automation.</Text>
+              <div className="numbered-item">
+                <span className="numbered-icon">3</span>
+                <div className="numbered-body">
+                  <strong>KI-Agenten befähigen</strong>
+                  <Text block>Nutzen Sie das Wissen als Kontext für KI und Automation.</Text>
+                </div>
               </div>
             </li>
             <li>
-              <span>4</span>
-              <div>
-                <strong>Besser entscheiden & umsetzen</strong>
-                <Text block>Steigern Sie Effizienz, Qualität und Compliance.</Text>
+              <div className="numbered-item">
+                <span className="numbered-icon">4</span>
+                <div className="numbered-body">
+                  <strong>Besser entscheiden & umsetzen</strong>
+                  <Text block>Steigern Sie Effizienz, Qualität und Compliance.</Text>
+                </div>
               </div>
             </li>
           </ol>
+
         </Card>
 
         <Card className="info-card">

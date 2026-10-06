@@ -31,14 +31,12 @@ class Footer extends React.Component {
             <Text weight="semibold">Produkte</Text>
             <a href="#">SemTalk Desktop</a>
             <a href="#">SemTalk Online</a>
-            <a href="#">Add-Ons</a>
             <a href="/semtalk-online-teams-app">SemTalk Online in Microsoft365</a>
           </div>
 
           <div>
             <Text weight="semibold">Lösungen</Text>
             <a href="/prozessmanagement">Prozessmanagement</a>
-            <a href="#">Enterprise Architecture</a>
             <a href="/unternehmenswissen">Wissensmanagement</a>
             <a href="/ki-agenten">KI & Automatisierung</a>
           </div>
@@ -46,7 +44,6 @@ class Footer extends React.Component {
           <div>
             <Text weight="semibold">Ressourcen</Text>
             <a href="/Ressourcen">Blog</a>
-            <a href="/Ressourcen">Webinare</a>
             <a href="/Ressourcen">Whitepaper</a>
             <a href="/semtalk-online-documentation-and-support">SemTalk Online Dokumentation</a>
           </div>
@@ -56,7 +53,6 @@ class Footer extends React.Component {
             <Link to="/impressum">Impressum</Link>
             <a href="/datenschutz">Datenschutzbestimmungen</a>
             <a href="/terms-of-service-semtalk-online">Nutzungsbestimmungen SemTalk Online</a>
-            <a href="#">Karriere</a>
           </div>
         </div>
       </footer>
