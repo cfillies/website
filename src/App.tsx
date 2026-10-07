@@ -40,7 +40,7 @@ import Prozessmanagement from "./Pages/Prozessmanagement";
 import Unternehmenswissen from "./Pages/Unternehmenswissen";
 import KIAgenten from "./Pages/KIAgenten";
 import Microsoft365 from "./Pages/Microsoft365";
-import Branchen from "./Pages/Branchen";
+import Branchen from "./Pages/Produkte";
 import Ressourcen from "./Pages/Ressourcen";
 import UeberUns from "./Pages/UeberUns";
 import Demo from "./Pages/Demo";
@@ -50,6 +50,7 @@ import PrivacyPolicySemTalkOnline from "./Pages/PrivacyPolicySemTalkOnline";
 import SemTalkOnlineTeamsApp from "./Pages/SemTalkOnlineTeamsApp";
 import TermsOfServiceSemTalkOnline from "./Pages/TermsOfServiceSemTalkOnline";
 import SemtalkOnlineDocumentationAndSupport from "./Pages/SemtalkOnlineDocumentationAndSupport";
+import Produkte from './Pages/Produkte';
 
 
 
@@ -86,7 +87,7 @@ export const navItems: NavItem[] = [
   { label: 'Unternehmenswissen', path: '/unternehmenswissen' },
   { label: 'KI-Agenten', path: '/ki-agenten' },
   { label: 'Microsoft 365', path: '/semtalk-online-teams-app' }, // ← NEU
-  { label: 'Produkte', path: '/branchen' },
+  { label: 'Produkte', path: '/produkte' },
   { label: 'Ressourcen', path: '/ressourcen' }
 ];
 
@@ -203,7 +204,7 @@ class App extends React.Component {
               <Route path="/unternehmenswissen" element={<Unternehmenswissen />} />
               <Route path="/ki-agenten" element={<KIAgenten />} />
               <Route path="/microsoft-365" element={<Microsoft365 />} />
-              <Route path="/branchen" element={<Branchen />} />
+              <Route path="/produkte" element={<Produkte />} />
               <Route path="/ressourcen" element={<Ressourcen />} />
               <Route path="/ueber-uns" element={<UeberUns />} />
               <Route path="/demo" element={<Demo />} />

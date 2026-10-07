@@ -962,3 +962,12 @@ a {
   margin-right: 0;
 }
 
+.pm-card .text-link {
+  color: #0066cc;              /* Microsoft-Blau */
+  text-decoration: underline;  /* klarer Link */
+}
+
+.pm-card .text-link:hover {
+  color: #004999;              /* dunkler beim Hover */
+  text-decoration: underline;
+}
