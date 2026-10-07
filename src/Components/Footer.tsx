@@ -12,9 +12,9 @@ class Footer extends React.Component {
       <footer className="site-footer">
         <div className="footer-brand">
           <div className="brand-lockup">
-            <div className="brand-mark">
-            <img src={logo} alt="SemTalk Logo" />
-            </div>
+            <Link to="/" className="brand-mark">
+              <img src={logo} alt="SemTalk Logo" />
+            </Link>
             <Text className="brand-name" weight="semibold">
               SemTalk
             </Text>
@@ -29,8 +29,7 @@ class Footer extends React.Component {
         <div className="footer-columns">
           <div>
             <Text weight="semibold">Produkte</Text>
-            <a href="#">SemTalk Desktop</a>
-            <a href="#">SemTalk Online</a>
+            <a href="/produkte">SemTalk Online</a>
             <a href="/semtalk-online-teams-app">SemTalk Online in Microsoft365</a>
           </div>
 
