@@ -7,54 +7,62 @@ import {
   Checkbox,
   Button
 } from "@fluentui/react-components";
+import {  IMongoOption, mgSend_Mail} from '@semtalk/mongodb';
 
 type DemoState = {
-  firstName: string;
-  lastName: string;
-  org: string;
-  phone: string;
-  email: string;
-  comment: string;
-  privacyAccepted: boolean;
+  
+  mailsend: boolean;
 };
 
 class Demo extends React.Component<{}, DemoState> {
   constructor(props: {}) {
     super(props);
     this.state = {
-      firstName: "",
-      lastName: "",
-      org: "",
-      phone: "",
-      email: "",
-      comment: "",
-      privacyAccepted: false
+      
+      mailsend: false
     };
   }
 
-  private isFormValid() {
-    const {
-      firstName,
-      lastName,
-      org,
-      phone,
-      email,
-      privacyAccepted
-    } = this.state;
 
-    return (
-      firstName.trim() !== "" &&
-      lastName.trim() !== "" &&
-      org.trim() !== "" &&
-      phone.trim() !== "" &&
-      email.trim() !== "" &&
-      privacyAccepted
-    );
-  }
+
+  /*private handleSubmit = () => {
+    if (!this.isFormValid()) {
+      return;
+    }
+
+
+    // Handle form submission logic here
+  };*/
+
+  /*private send_mail = async (link: string,) => {
+    let email = this.state.email;
+    let semLink ="https://www.semtalkonline.semtalk.com";
+    
+    
+      
+        let comment = this.state.comment
+       
+        
+        let subject = "Registrierung für SemTalk Online";
+        let mailtext = 'Hallo ' + this.state.firstName + ' ' + this.state.lastName + ',\n\n Sie haben sich für SemTalk Online registriert. '
+           + 'Wenn Sie die Testumgebung von SemTalk verwenden möchten, klicken Sie bitte auf den folgenden Link, um Ihre Registrierung abzuschließen: ' + link +
+       
+            + comment +
+            '\n\n Sie können sich als ' + role + ' anmelden.' +
+            '\n\n Diese E-Mail ist computergeneriert.';
+        
+
+        mgSend_Mail(this.props.mongo, email, mailtext, subject);
+     
+    this.setState({ mailsend: true});
+
+
+
+
+  }*/
 
   render() {
-    const { firstName, lastName, org, phone, email, comment, privacyAccepted } =
-      this.state;
+    
 
     return (
       <div className="content-shell">
@@ -65,164 +73,26 @@ class Demo extends React.Component<{}, DemoState> {
             <Title1>Testumgebung SemTalk online</Title1>
             <p>
               <Text>
-                Registrieren Sie sich hier, um Modelle mit SemTalk online zu erstellen.
-                Bitte beachten Sie, dass in der Demo‑Umgebung Ihre Modelle auch für andere
-                Nutzer sichtbar sind.
+                Registrieren Sie sich <u><a href="https://www.semtalkonline.semtalk.com" target="_blank">hier</a></u> (<u><a href="https://semtalkonline.semtalk.com/signup" target="_blank">Registrierungsformular</a></u>), um Modelle mit SemTalk online in unserer Testumgebung zu erstellen.
+                Bitte beachten Sie, dass in der Demo‑Umgebung Ihre Modelle auch für andere Nutzer sichtbar sind. Sie soll lediglich zu ersten Modellierungstest dienen und keine individuelle Anwendungsumgebung darstellen.
+                <p>Beachten Sie auch unsere <a href="/datenschutz" target="_blank">
+                        Datenschutzbestimmungen
+                </a>
+                </p>
               </Text>
             </p>
-          </div>
-        </section>
-
-        {/* Formular */}
-        <section className="section">
-          <div className="section-content pm-card">
-
-            <Title2>Registrierung</Title2>
-
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "16px",
-                maxWidth: "500px"
-              }}
-            >
-              {/* Name */}
-              <div>
-                <Text weight="semibold">Name *</Text>
-                <div style={{ display: "flex", gap: "12px", marginTop: "6px" }}>
-                  <Input
-                    placeholder="Vorname"
-                    required
-                    value={firstName}
-                    onChange={(_, data) =>
-                      this.setState({ firstName: data.value })
-                    }
-                  />
-                  <Input
-                    placeholder="Nachname"
-                    required
-                    value={lastName}
-                    onChange={(_, data) =>
-                      this.setState({ lastName: data.value })
-                    }
-                  />
-                </div>
-              </div>
-
-              {/* Organisation */}
-              <div>
-                <Text weight="semibold">Organisation / Unternehmen *</Text>
-                <Input
-                  placeholder="Ihr Unternehmen"
-                  required
-                  value={org}
-                  onChange={(_, data) =>
-                    this.setState({ org: data.value })
-                  }
-                />
-              </div>
-
-              {/* Telefonnummer */}
-              <div>
-                <Text weight="semibold">Telefonnummer *</Text>
-                <Input
-                  placeholder="Ihre Telefonnummer"
-                  required
-                  value={phone}
-                  onChange={(_, data) =>
-                    this.setState({ phone: data.value })
-                  }
-                />
-              </div>
-
-              {/* E-Mail */}
-              <div>
-                <Text weight="semibold">E‑Mail *</Text>
-                <Input
-                  placeholder="Ihre E‑Mail-Adresse"
-                  required
-                  value={email}
-                  onChange={(_, data) =>
-                    this.setState({ email: data.value })
-                  }
-                />
-              </div>
-
-              {/* Kommentar */}
-              <div>
-                <Text weight="semibold">Kommentar oder Nachricht</Text>
-                <Input
-                  placeholder="Ihre Nachricht (optional)"
-                  value={comment}
-                  onChange={(_, data) =>
-                    this.setState({ comment: data.value })
-                  }
-                />
-              </div>
-
-              {/* Datenschutz */}
-              <div style={{ marginTop: "12px" }}>
-                <Checkbox
-                  checked={privacyAccepted}
-                  onChange={(_, data) =>
-                    this.setState({ privacyAccepted: !!data.checked })
-                  }
-                  required
-                  label={
-                    <>
-                      Ich habe die{" "}
-                      <a href="/impressum#datenschutz" target="_blank">
-                        Datenschutzbestimmungen
-                      </a>{" "}
-                      gelesen und stimme der Verarbeitung meiner Daten zu.
-                    </>
-                  }
-                />
-              </div>
-
-              {/* Absenden */}
-              <Button
-                appearance="primary"
-                size="large"
-                disabled={!this.isFormValid()}
-              >
-                Absenden
-              </Button>
-
-              <Text size={200} style={{ marginTop: "8px" }}>
-                Bitte beachten Sie unsere{" "}
-                <a href="/impressum#datenschutz">Datenschutzbestimmungen</a>.
-              </Text>
-            </div>
-          </div>
-        </section>
-
-        {/* Demo Portal Hinweis */}
-        <section className="section">
-          <div className="section-content pm-card">
-            <Title2>SemTalk Services Demo Portal</Title2>
             <p>
               <Text>
-                Ein SemTalk Services Demo Portal können Sie über den folgenden Link ansehen:
+                Das SemTalk Services Demo Portal (für ausschließlich lesenden Zugriff auf Modelle) können Sie über den folgenden Link ansehen: 
+                <u><a href="https://semtalkportal.semtalk.com/" target="_blank"> SemTalk Online Portal</a></u>
               </Text>
-            </p>
-
-            <a
-              href="https://www.semtation.de/semtalk-online-teams-app"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ display: "inline-block", marginTop: "8px" }}
-            >
-              Zum SemTalk Services Demo Portal
-            </a>
-
-            <div className="pm-back-to-top">
-              <a href="#top">↑ Nach oben</a>
-            </div>
+            </p>  
+            
           </div>
         </section>
 
+        
+       
       </div>
     );
   }

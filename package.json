@@ -11,6 +11,7 @@
   "dependencies": {
     "@fluentui/react-components": "^9.68.0",
     "@fluentui/react-icons": "^2.0.249",
+    "@semtalk/mongodb": "^1.0.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.18.0"

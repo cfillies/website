@@ -44,6 +44,7 @@ import Branchen from "./Pages/Branchen";
 import Ressourcen from "./Pages/Ressourcen";
 import UeberUns from "./Pages/UeberUns";
 import Demo from "./Pages/Demo";
+import Contact from "./Pages/Contact";
 import Datenschutzbestimmungen from "./Pages/Datenschutzbestimmungen";
 import Impressum from "./Pages/Impressum";
 import PrivacyPolicySemTalkOnline from "./Pages/PrivacyPolicySemTalkOnline";
@@ -206,6 +207,7 @@ class App extends React.Component {
               <Route path="/ressourcen" element={<Ressourcen />} />
               <Route path="/ueber-uns" element={<UeberUns />} />
               <Route path="/demo" element={<Demo />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/datenschutz" element={<Datenschutzbestimmungen />} />
               <Route path="/impressum" element={<Impressum />} />
 
