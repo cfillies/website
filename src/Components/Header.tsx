@@ -28,7 +28,8 @@ class Header extends React.Component {
             <Link
               key={item.label}
               className="nav-link"
-              to={`/${item.label.toLowerCase().replace(/ /g, "-")}`}
+              to={item.path}
+
             >
               {item.label}
             </Link>

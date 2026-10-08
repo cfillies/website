@@ -40,7 +40,7 @@ import Prozessmanagement from "./Pages/Prozessmanagement";
 import Unternehmenswissen from "./Pages/Unternehmenswissen";
 import KIAgenten from "./Pages/KIAgenten";
 import Microsoft365 from "./Pages/Microsoft365";
-import Branchen from "./Pages/Branchen";
+import Branchen from "./Pages/Produkte";
 import Ressourcen from "./Pages/Ressourcen";
 import UeberUns from "./Pages/UeberUns";
 import Demo from "./Pages/Demo";
@@ -52,6 +52,7 @@ import SemTalkOnlineTeamsApp from "./Pages/SemTalkOnlineTeamsApp";
 import TermsOfServiceSemTalkOnline from "./Pages/TermsOfServiceSemTalkOnline";
 import NutzungsbestimmungenSemTalkOnline from "./Pages/NutzungsbestimmungenSemTalkOnline";
 import SemtalkOnlineDocumentationAndSupport from "./Pages/SemtalkOnlineDocumentationAndSupport";
+import Produkte from './Pages/Produkte';
 
 
 
@@ -60,6 +61,7 @@ import SemtalkOnlineDocumentationAndSupport from "./Pages/SemtalkOnlineDocumenta
 // Datentypen
 type NavItem = {
   label: string;
+  path: string;
 };
 
 type Benefit = {
@@ -83,14 +85,14 @@ type Resource = {
 
 // Navigationseinträge
 export const navItems: NavItem[] = [
-  { label: 'Prozessmanagement' },
-  { label: 'Unternehmenswissen' },
-  { label: 'KI-Agenten' },
-  { label: 'Microsoft 365' },
-  { label: 'Produkte' },
-  { label: 'Ressourcen' }
-  
+  { label: 'Prozessmanagement', path: '/prozessmanagement' },
+  { label: 'Unternehmenswissen', path: '/unternehmenswissen' },
+  { label: 'KI-Agenten', path: '/ki-agenten' },
+  { label: 'Microsoft 365', path: '/semtalk-online-teams-app' }, // ← NEU
+  { label: 'Produkte', path: '/produkte' },
+  { label: 'Ressourcen', path: '/ressourcen' }
 ];
+
 
 
 // Benefits
@@ -204,7 +206,7 @@ class App extends React.Component {
               <Route path="/unternehmenswissen" element={<Unternehmenswissen />} />
               <Route path="/ki-agenten" element={<KIAgenten />} />
               <Route path="/microsoft-365" element={<Microsoft365 />} />
-              <Route path="/branchen" element={<Branchen />} />
+              <Route path="/produkte" element={<Produkte />} />
               <Route path="/ressourcen" element={<Ressourcen />} />
               <Route path="/ueber-uns" element={<UeberUns />} />
               <Route path="/demo" element={<Demo />} />
