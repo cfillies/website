@@ -9,18 +9,11 @@ import {
 } from "@fluentui/react-components";
 import {  IMongoOption, mgSend_Mail} from '@semtalk/mongodb';
 
-type DemoState = {
-  
-  mailsend: boolean;
-};
 
-class Demo extends React.Component<{}, DemoState> {
+class Demo extends React.Component<{}, {}> {
   constructor(props: {}) {
     super(props);
-    this.state = {
-      
-      mailsend: false
-    };
+    
   }
 
 
@@ -87,6 +80,11 @@ class Demo extends React.Component<{}, DemoState> {
                 <u><a href="https://semtalkportal.semtalk.com/" target="_blank"> SemTalk Online Portal</a></u>
               </Text>
             </p>  
+            <p>
+              <Text>
+                Wenn Sie mit uns in Kontakt treten wollen, um ein individuelles Online Meeting zu SemTalk Online zu vereinbaren, nutzen Sie unser Kontaktformular: <u><a href="/contact" target="_blank">Kontaktformular</a></u> oder schreiben Sie uns direkt an <a href="mailto:sales@semtalk.com" className="text-link">sales@semtalk.com</a>.
+              </Text>
+            </p>
             
           </div>
         </section>
