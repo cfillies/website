@@ -50,6 +50,7 @@ import Impressum from "./Pages/Impressum";
 import PrivacyPolicySemTalkOnline from "./Pages/PrivacyPolicySemTalkOnline";
 import SemTalkOnlineTeamsApp from "./Pages/SemTalkOnlineTeamsApp";
 import TermsOfServiceSemTalkOnline from "./Pages/TermsOfServiceSemTalkOnline";
+import NutzungsbestimmungenSemTalkOnline from "./Pages/NutzungsbestimmungenSemTalkOnline";
 import SemtalkOnlineDocumentationAndSupport from "./Pages/SemtalkOnlineDocumentationAndSupport";
 
 
@@ -209,10 +210,12 @@ class App extends React.Component {
               <Route path="/demo" element={<Demo />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/datenschutz" element={<Datenschutzbestimmungen />} />
+              <Route path="/en/terms-of-service-semtalk-online" element={<TermsOfServiceSemTalkOnline />} />
+              <Route path="/nutzungsbestimmungen-semtalk-online" element={<NutzungsbestimmungenSemTalkOnline />} />
               <Route path="/impressum" element={<Impressum />} />
 
               <Route
-                path="/privacy-policy-semtalk-online-in-microsoft365"
+                path="/en/privacy-policy-semtalk-online-in-microsoft365"
                 element={<PrivacyPolicySemTalkOnline />}
               />
 
