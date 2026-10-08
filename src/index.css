@@ -493,28 +493,45 @@ a {
   color: var(--color-primary-yellow);
 }
 
-.numbered-list li span {
-  background: linear-gradient(135deg, var(--color-primary-yellow), #d4a900);
-  color: var(--color-black);
-}
-
-.numbered-list li span {
-  width: 28px;
-  height: 28px;
-  border-radius: 999px;
+.numbered-list li {
   display: grid;
-  place-items: center;
-  color: white;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--color-primary-blue), var(--color-blue-dark));
-  margin-top: 2px;
+  grid-template-columns: auto 1fr;
+  column-gap: 12px;
+  row-gap: 4px;
+  align-items: start;
+  margin-bottom: 18px;
 }
 
-.numbered-list strong {
-  display: block;
-  margin-bottom: 2px;
+.numbered-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-blue),
+    var(--color-blue-dark)
+  );
+
+  grid-row: 1 / span 2;
+}
+
+.numbered-body {
   color: #172554;
 }
+
+.numbered-body strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
 
 .resource-list {
   display: grid;
@@ -945,3 +962,12 @@ a {
   margin-right: 0;
 }
 
+.pm-card .text-link {
+  color: #0066cc;              /* Microsoft-Blau */
+  text-decoration: underline;  /* klarer Link */
+}
+
+.pm-card .text-link:hover {
+  color: #004999;              /* dunkler beim Hover */
+  text-decoration: underline;
+}
