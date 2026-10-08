@@ -971,3 +971,18 @@ a {
   color: #004999;              /* dunkler beim Hover */
   text-decoration: underline;
 }
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.social-icon svg {
+  color: #444;
+  transition: color 0.2s ease;
+}
+
+.social-icon:hover svg {
+  color: #0078d4; /* Microsoft-Blau */
+}

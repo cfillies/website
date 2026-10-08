@@ -158,21 +158,17 @@ export const useCases: UseCase[] = [
 // Ressourcen
 export const resources: Resource[] = [
   {
-    kind: 'Blog',
-    title: 'Prozessmodelle als Kontext für KI-Agenten',
-    date: '15. Mai 2024'
-  },
-  {
-    kind: 'Webinar',
-    title: 'SemTalk und Microsoft 365: Das perfekte Zusammenspiel',
-    date: '5. Juni 2024'
+    kind: 'Messen',
+    title: 'Aktuelle Veranstaltungen & Branchenevents',
+    date: '2026'
   },
   {
     kind: 'Whitepaper',
-    title: 'Semantische Modellierung: Der Schlüssel für Enterprise AI',
-    date: '22. April 2024'
+    title: 'Whitepaper: Semtalk® in Microsoft 365: Prozesswissen nativ integriert',
+    date: 'Oktober 2026'
   }
 ];
+
 
 
 // App-Komponente
@@ -193,8 +189,8 @@ class App extends React.Component {
                   <>
                     <HeroSection />
                     <ValueBand />
-                    <UseCasesSection />
-                    <LogoBand />
+                    {/* <UseCasesSection /> */}
+                    {/* <LogoBand /> */}
                     <ThreeColumnSection />
                     <CTASection />
                   </>
