@@ -23,7 +23,7 @@ class CTASection extends React.Component {
             Demo anfordern
           </Button>
 
-          <Button appearance="transparent" size="large" className="cta-contact">
+          <Button appearance="transparent" size="large" className="cta-contact"  as="a" href="/contact" rel="noopener noreferrer">
             Kontakt aufnehmen
           </Button>
 
