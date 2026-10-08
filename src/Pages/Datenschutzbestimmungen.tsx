@@ -22,7 +22,7 @@ class Datenschutzbestimmungen extends React.Component {
                       <p>Wir erklären in diesem Dokument auch, wie wir Cookies und Analysetools auf unseren gesamten Webseiten sowie in unseren Produkten und Dienstleistungen verwenden.</p>
                       <p>Wir halten uns jederzeit an das geltende Datenschutzrecht und diese Datenschutzrichtlinie. Daten geben wir nur in den Fällen weiter, die in diesen Bestimmungen aufgeführt werden.</p>
                       <p><strong>Wie können Sie uns kontaktieren?</strong></p>
-                      <p>Unsere Kontaktdaten finden Sie unter <a href="https://www.semtation.de/kontakt">Kontakt</a> .</p>
+                      <p>Unsere Kontaktdaten finden Sie unter <a href="./contact">Kontakt</a> .</p>
                       <p><strong>Welche personenbezogenen Daten werden von uns verarbeitet?</strong></p>
                       <p>Wir verarbeiten, wenn Sie die Testversion des SemTalk Editors herunterladen und benutzen oder unsere Webseiten besuchen, unterschiedliche Daten. Diese können personenbezogen sein.</p>
                       <p>Dazu gehören u. a. folgende Informationen:</p>

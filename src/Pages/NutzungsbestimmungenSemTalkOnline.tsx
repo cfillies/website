@@ -1,14 +1,14 @@
 import React from "react";
 import { Title1, Text } from "@fluentui/react-components";
 
-class TermsOfServiceSemTalkOnline extends React.Component {
+class NutzungsbestimmungenSemTalkOnline extends React.Component {
   render() {
     return (
       <div className="content-shell">
         <section className="section">
           <div className="section-content pm-card">
 
-            <Title1>Terms of Service SemTalk Online</Title1>
+            <Title1>Nutzungsbestimmungen – SemTalk Online</Title1>
 
             <p><Text>Internationale Softwarelizenzvereinbarung der Semtation GmbH</Text></p>
 
@@ -197,4 +197,4 @@ class TermsOfServiceSemTalkOnline extends React.Component {
   }
 }
 
-export default TermsOfServiceSemTalkOnline;
+export default NutzungsbestimmungenSemTalkOnline;
