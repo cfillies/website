@@ -10,185 +10,167 @@ class TermsOfServiceSemTalkOnline extends React.Component {
 
             <Title1>Terms of Service SemTalk Online</Title1>
 
-            <p><Text>Internationale Softwarelizenzvereinbarung der Semtation GmbH</Text></p>
+            
+<p><strong>PLEASE READ THIS LICENSE CAREFULLY BEFORE USING THE SOFTWARE. SEMTATION GMBH LICENSES THIS SOFTWARE TO YOU ONLY IF YOU AGREE TO THE TERMS OF THIS LICENSE. BY USING THIS SOFTWARE, YOU AGREE TO THESE TERMS.</strong></p>
 
-            <p>
-              <Text>
-                BITTE LESEN SIE DIESE LIZENZ VOR DER NUTZUNG DER SOFTWARE SORGFÄLTIG DURCH.
-                DIE SEMTATION GMBH LIZENZIERT IHNEN DIESE SOFTWARE NUR, WENN SIE ZUERST DEN
-                BEDINGUNGEN DIESER LIZENZ ZUSTIMMEN. DURCH DIE NUTZUNG DIESER SOFTWARE
-                ERKLÄREN SIE SICH MIT DIESEN BEDINGUNGEN EINVERSTANDEN.
-              </Text>
-            </p>
+<hr />
 
-            <p><Text>Allgemeine Bedingungen</Text></p>
+<h2>General Terms</h2>
 
-            <p>
-              <Text>
-                Die Vertragsparteien erklären sich damit einverstanden, dass diese Lizenz die
-                vollständige Vereinbarung zwischen ihnen darstellt und alle vorherigen
-                Vereinbarungen, Absprachen oder Übereinkünfte ersetzt. Darüber hinaus erkennen
-                die Parteien an:
-                <br />
-                (a) dass sie diese Lizenz nicht auf der Grundlage irgendwelcher Aussagen,
-                Zusicherungen oder Garantien abgeschlossen haben, sofern diese nicht
-                ausdrücklich in dieser Lizenz oder den Anhängen wiederholt werden;
-                <br />
-                (b) dass jeglicher Rechtsbehelf ausschließlich in Form einer Klage wegen
-                Vertragsverletzung dieser Lizenz erfolgen kann;
-                <br />
-                (c) dass diese Klausel keine Anwendung auf arglistige Täuschung findet.
-              </Text>
-            </p>
+<p>The parties agree that this license constitutes the entire agreement between them and supersedes all prior agreements, arrangements, or understandings. Furthermore, the parties acknowledge that:</p>
 
-            <p><Text>1. Lizenz</Text></p>
 
-            <p>
-              <Text>
-                Urheberrecht:
-                <br />
-                Diese Software, ihre Kopien und die Benutzerdokumentation sind Eigentum der
-                Semtation GmbH. Sie sind urheberrechtlich geschützt. Sie wird Ihnen nur
-                lizenziert, nicht verkauft. Nach Beendigung dieser Lizenz dürfen Sie die
-                Software nicht mehr nutzen.
-                <br />
-                Semtation GmbH behält sämtliche geistigen Eigentumsrechte.
-              </Text>
-            </p>
+(a) they have not entered into this license based on any statements, representations, or warranties (including those made negligently or mistakenly), unless expressly stated or referred to in this license or its appendices;<br />
+(b) any legal remedy is limited exclusively to a claim for breach of this license and/or its appendices;<br />
+(c) this clause does not apply to fraudulent misrepresentation or provisions in this license and/or appendices induced by fraud. In such cases, statutory remedies remain unaffected.
 
-            <p>
-              <Text>
-                Nutzung der Software:
-                <br />
-                Semtation GmbH gewährt Ihnen eine widerrufliche, nicht exklusive,
-                nicht übertragbare Lizenz zur Nutzung der Software im Umfang des
-                Berechtigungsnachweises.
-              </Text>
-            </p>
 
-            <p>
-              <Text>
-                Bei Einzellizenzen dürfen Sie die Software an entsprechend lizenzierte Benutzer
-                verteilen.
-                <br />
-                Bei Firmenlizenzen dürfen Sie die Software ausschließlich an den im Vertrag
-                angegebenen Standorten einsetzen.
-                <br />
-                Sie sind dafür verantwortlich, dass alle Nutzer die Bedingungen einhalten.
-              </Text>
-            </p>
+<hr />
 
-            <p>
-              <Text>
-                Verbotene Handlungen:
-                <br />
-                – Nutzung außerhalb der Lizenzbedingungen<br />
-                – Rückentwicklung, Dekompilierung, Übersetzung<br />
-                – Vermietung, Verleih, Unterlizenzierung
-              </Text>
-            </p>
+<h2>1. License</h2>
 
-            <p><Text>2. Gebühren und Steuern</Text></p>
+<h3>Copyright:</h3>
 
-            <p>
-              <Text>
-                Lizenzgebühren richten sich nach dem Berechtigungsnachweis.
-                Rückerstattungen sind ausgeschlossen.
-                <br />
-                Steuern und Abgaben sind vom Lizenznehmer zu tragen.
-              </Text>
-            </p>
+<p>This software, its copies (in any form), and the user documentation are the property of Semtation GmbH. They are protected by copyright and are licensed, not sold, to you. You only acquire the right to use the software, regardless of the storage media or platforms on which it is installed. After termination of this license, you may no longer use the software.</p>
 
-            <p><Text>3. Beschränkte Gewährleistung</Text></p>
+<p>Semtation GmbH or its partners retain all intellectual property rights, including copyrights, to the software and documentation. These rights are protected by the copyright laws of the Federal Republic of Germany and international agreements. All rights are reserved by Semtation GmbH.</p>
 
-            <p>
-              <Text>
-                Semtation GmbH gewährleistet, dass die Software der Spezifikation entspricht.
-                Keine Garantie für fehlerfreie Nutzung.
-                <br />
-                Fehler müssen innerhalb der Fristen gemeldet werden.
-                <br />
-                Nachbesserung erfolgt innerhalb angemessener Frist.
-              </Text>
-            </p>
+<h3>Use of the Software:</h3>
 
-            <p><Text>4. Haftungsbeschränkung</Text></p>
+<p>Semtation GmbH grants you a revocable, non-exclusive, non-transferable license to use the software and its documentation as specified in the license certificate.</p>
 
-            <p>
-              <Text>
-                Haftung besteht nur bei:
-                <br />
-                – nicht fahrlässiger Verletzung wesentlicher Pflichten<br />
-                – grober Fahrlässigkeit oder Vorsatz
-                <br />
-                Haftung ist begrenzt auf typischen Schaden und das Dreifache der Lizenzgebühr.
-              </Text>
-            </p>
+<ul>
+  <li>For a single license purchased via the Microsoft Store or directly from Semtation GmbH, you may distribute the software to appropriately licensed users.</li>
+  <li>For a corporate license, the software may only be used at the locations specified in the license agreement. The number of users is not limited. A subsidiary may be included if agreed in the license contract.</li>
+  <li>The type of license and number of users are defined in the license certificate.</li>
+  <li>You are responsible for ensuring that all users comply with the terms of this license.</li>
+</ul>
 
-            <p><Text>5. Allgemeines</Text></p>
+<h3>Prohibited Actions:</h3>
 
-            <p>
-              <Text>
-                Änderungen bedürfen der Schriftform.
-                <br />
-                Verbraucherrechte bleiben unberührt.
-                <br />
-                Exportvorschriften können gelten.
-                <br />
-                Deutsches Recht, Gerichtsstand Potsdam.
-              </Text>
-            </p>
+<p>You are not permitted to:</p>
 
-            <p><Text>6. Infrastruktur der App und Datenschutz</Text></p>
+<ul>
+  <li>use, copy, modify, combine, alter, or distribute the software beyond what is permitted in this license;</li>
+  <li>reverse engineer, decompile, or otherwise translate the software, unless expressly allowed by law;</li>
+  <li>sublicense, rent, lend, or lease the software.</li>
+</ul>
 
-            <p>
-              <Text>
-                Die SemTalk Online App wird in Microsoft Azure betrieben.
-                <br />
-                Die App speichert keine personenbezogenen Daten.
-                <br />
-                Login erfolgt über Microsoft‑Authentifizierung.
-              </Text>
-            </p>
+<hr />
 
-            <p><Text>Local Storage</Text></p>
+<h2>2. Fees and Taxes</h2>
 
-            <p>
-              <Text>
-                SemTalk Online nutzt Local Storage zur Speicherung von Einstellungen:
-                <br />
-                – Sprache<br />
-                – Schriftarten<br />
-                – Modellierungsnotation<br />
-                – Positionierung grafischer Elemente<br />
-                – zuletzt verwendete Datei
-                <br />
-                Keine personenbezogenen Daten im Local Storage.
-              </Text>
-            </p>
+<p>Semtation GmbH charges a license fee, which is specified in the license certificate. The fee depends on the license type. If you wish to expand your use, inform Semtation GmbH or purchase new licenses via the Microsoft Store and pay the applicable fees. Refunds or credits for already paid fees are not provided.</p>
 
-            <p><Text>7. Salvatorische Klausel</Text></p>
+<p>Taxes, duties, or fees (excluding those on the net income of Semtation GmbH) imposed by authorities on the software must be paid by you unless you can provide a valid exemption.</p>
 
-            <p>
-              <Text>
-                Ungültige Bestimmungen werden durch solche ersetzt, die dem wirtschaftlichen
-                Zweck am nächsten kommen.
-              </Text>
-            </p>
+<hr />
 
-            <p><Text>Zusätzliche Abschnitte</Text></p>
+<h2>3. Limited Warranty</h2>
 
-            <p>
-              <Text>
-                Abtretung:
-                <br />
-                Übertragung der Lizenz nur mit schriftlicher Zustimmung.
-                <br />
-                Rechte Dritter:
-                <br />
-                Diese Lizenz begründet keine Rechte für Dritte.
-              </Text>
-            </p>
+<p>Semtation GmbH warrants that the software materially conforms to the specifications valid at the time of delivery (provided only digitally), if used in the specified environment. No warranty is given for uninterrupted or error-free use, nor for correction of all defects. You are responsible for the results obtained using the software.</p>
+
+<h3>Error Correction within the Warranty Period:</h3>
+
+<ul>
+  <li>Errors are functional deviations that significantly impair the agreed usage.</li>
+  <li>Errors must be reported in writing with a description of the defect within the specified period (obvious defects: 2 weeks; hidden defects: 20 days for resellers, 6 months for non-resellers).</li>
+  <li>The defect notice must include the type, impact, and conditions of the error.</li>
+  <li>Upon receiving the notice, Semtation GmbH will remedy the defect within a reasonable period by providing a corrected version.</li>
+  <li>If remediation fails, you are entitled to statutory warranty rights (reduction, withdrawal, etc.).</li>
+</ul>
+
+<p>These warranty provisions replace all other agreements, whether oral or written, express or implied. Representatives of Semtation GmbH may not extend them.</p>
+
+<p>The warranty ends with the end of software use under the contract.<br />
+Some countries do not allow limitations on implied warranties—in such cases, they apply only for the duration of the warranty period.</p>
+
+<hr />
+
+<h2>4. Limitation of Liability</h2>
+
+<p>Semtation GmbH is liable only for:</p>
+
+<ul>
+  <li>non-negligent breach of a material contractual obligation, or</li>
+  <li>gross negligence or willful misconduct.</li>
+</ul>
+
+<p>For ordinary negligence, liability is limited to the typical damages and three times the license fee.</p>
+
+<p>In cases of gross negligence by ordinary employees, section 2 also applies.</p>
+
+<p>Semtation GmbH is not liable for indirect damages, loss of profits, or data loss unless caused with gross negligence or willful misconduct by executive personnel.</p>
+
+<p>Total liability is limited to foreseeable damages at the time the contract was concluded.</p>
+
+<p>This limitation of liability also applies to employees and representatives of Semtation GmbH.</p>
+
+<hr />
+
+<h2>5. General Provisions</h2>
+
+<ul>
+  <li>Amendments to this license must be in writing.</li>
+  <li>Consumer rights remain unaffected.</li>
+  <li>If license terms are violated, the usage permission ends.</li>
+  <li>Export regulations may apply to certain countries. A list is available upon request from Semtation GmbH.</li>
+  <li>Legal claims arising from this license must be asserted within two years.</li>
+  <li>Force majeure releases both parties from their obligations.</li>
+</ul>
+
+<p>German law applies. The UN Convention on Contracts for the International Sale of Goods (CISG) is excluded.<br />
+Place of jurisdiction is Potsdam, Germany.</p>
+
+<hr />
+
+<h2>6. App Infrastructure and Data Protection</h2>
+
+<h3>Infrastructure</h3>
+
+<p>Semtation GmbH operates and maintains the backend service of the SemTalk Online App in a Microsoft Azure instance and provides this service to all users. This service does not store any data.</p>
+
+<p>All data is located in the Microsoft environment of the respective user or in a specially created instance of a MongoDB, which is under the control of the user’s organization.</p>
+
+<p>The login process is managed through the authentication mechanisms of the Microsoft environment using accounts assigned by the user’s organization. The SemTalk Online App itself does not collect personal data or store account or password information.</p>
+
+<p>Users are responsible for the model content and the information integrated within it. Semtation GmbH has no influence over the model content.</p>
+
+<h3>Local Storage</h3>
+
+<p>To adapt the SemTalk Online App to users’ personal needs, a technique called Local Storage (also known as “local data” or “local storage”) is used. This stores data in the browser cache, which may persist even after the browser window is closed or the program is exited—unless the cache is cleared.</p>
+
+<p>The stored data is used exclusively for configuring the appearance and functionality of SemTalk Online.</p>
+
+<p>Examples include:</p>
+
+<ul>
+  <li>Language settings</li>
+  <li>Fonts or font sizes</li>
+  <li>Modeling notation settings</li>
+  <li>Positioning and configuration of graphical elements on the interface</li>
+  <li>The last used file</li>
+</ul>
+
+<p>The data in Local Storage is stored only in the user’s browser cache and is not transmitted to Semtation GmbH or third parties.</p>
+
+<hr />
+
+<h2>7. Severability Clause</h2>
+
+<p>If individual provisions are or become invalid, the remainder of the contract remains valid. Invalid clauses shall be replaced with ones that come closest to the intended economic purpose. The same applies to any gaps in the contract.</p>
+
+<hr />
+
+<h2>Additional Sections:</h2>
+
+<h3>Assignment</h3>
+
+<p>You may only transfer this license with the written consent of Semtation GmbH.</p>
+
+<h3>Third-Party Rights</h3>
+
+<p>Unless explicitly stated, this license does not confer rights to third parties under the UK Contracts (Rights of Third Parties) Act 1999.</p>
 
           </div>
         </section>
