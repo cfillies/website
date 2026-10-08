@@ -75,17 +75,32 @@ class ThreeColumnSection extends React.Component {
         <Card className="info-card">
           <Title2 className="info-title">Aktuelles & Ressourcen</Title2>
           <div className="resource-list">
-            {resources.map((resource) => (
-              <div className="resource-item" key={resource.title}>
-                <div className="resource-kind">{resource.kind}</div>
-                <div className="resource-body">
-                  <strong>{resource.title}</strong>
-                  <Text block>{resource.date}</Text>
-                </div>
-                <ArrowRight24Regular />
-              </div>
-            ))}
+            {resources.map((resource) => {
+              const linkTarget =
+                resource.kind === "Messen"
+                  ? "/ressourcen#messen"
+                  : resource.kind === "Whitepaper"
+                  ? "/ressourcen#whitepaper"
+                  : "/ressourcen";
+
+              return (
+                <a
+                  href={linkTarget}
+                  className="resource-item"
+                  key={resource.title}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  <div className="resource-kind">{resource.kind}</div>
+                  <div className="resource-body">
+                    <strong>{resource.title}</strong>
+                    <Text block>{resource.date}</Text>
+                  </div>
+                  <ArrowRight24Regular />
+                </a>
+              );
+            })}
           </div>
+
           <div className="section-link compact">
             <a href="/Ressourcen">Alle Ressourcen</a>
             <ArrowRight24Regular />

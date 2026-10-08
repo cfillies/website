@@ -265,6 +265,29 @@ class Ressourcen extends React.Component {
           </div>
         </section>
 
+        <section className="section">
+          <div className="pm-card">
+            <Title2>Video: Einführung in SemTalk Online</Title2>
+
+            <Text block>
+              Dieses kurze Video gibt Ihnen einen ersten Eindruck von SemTalk Online und zeigt die wichtigsten Funktionen in Aktion.
+            </Text>
+
+            <div className="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/eplGAYGS-UU?si=IiUqQOFI9kzaDJGQ"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
 
 
       </div>
