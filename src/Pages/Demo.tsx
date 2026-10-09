@@ -68,9 +68,9 @@ class Demo extends React.Component<{}, {}> {
               <Text>
                 Registrieren Sie sich <u><a href="https://www.semtalkonline.semtalk.com" target="_blank">hier</a></u> (<u><a href="https://semtalkonline.semtalk.com/signup" target="_blank">Registrierungsformular</a></u>), um Modelle mit SemTalk online in unserer Testumgebung zu erstellen.
                 Bitte beachten Sie, dass in der Demo‑Umgebung Ihre Modelle auch für andere Nutzer sichtbar sind. Sie soll lediglich zu ersten Modellierungstest dienen und keine individuelle Anwendungsumgebung darstellen.
-                <p>Beachten Sie auch unsere <a href="/datenschutz" target="_blank">
+                <p>Beachten Sie auch unsere <u><a href="/datenschutz" target="_blank">
                         Datenschutzbestimmungen
-                </a>
+                </a></u>
                 </p>
               </Text>
             </p>
