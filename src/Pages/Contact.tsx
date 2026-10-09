@@ -100,7 +100,7 @@ class Demo extends React.Component<{}, DemoState> {
            + '\n\n Unternehmen: ' + this.state.org
            + '\n\n Kommentar: ' + this.state.comment;
 
-    mgSend_Mail(mongo, email, mailtext, subject);
+    mgSend_Mail(mongo, "sales@semtalk.com", mailtext, subject);
      
     this.setState({ mailsend: true});
 
