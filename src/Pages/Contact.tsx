@@ -10,7 +10,7 @@ import {
 } from "@fluentui/react-components";
 import {  IMongoOption, mgSend_Mail} from '@semtalk/mongodb';
 
-type DemoState = {
+type ContactState = {
   firstName: string;
   lastName: string;
   org: string;
@@ -21,7 +21,7 @@ type DemoState = {
   mailsend: boolean;
 };
 
-class Demo extends React.Component<{}, DemoState> {
+class Contact extends React.Component<{}, ContactState> {
   constructor(props: {}) {
     super(props);
     this.state = {
@@ -62,21 +62,17 @@ class Demo extends React.Component<{}, DemoState> {
     }
     this.send_mail();
     this.setState({ mailsend: true });
-
-
-    // Handle form submission logic here
   };
 
   private send_mail = async () => {
     let mongo: IMongoOption = {
       usemongo: true,
-      semmongoserverurl: "https://semmongo4.azurewebsites.net/api/",
-      semmongoserverurlBackup: "https://semmongo4.azurewebsites.net/api/",
+      semmongoserverurl: "https://azurewebsites.net",
+      semmongoserverurlBackup: "https://azurewebsites.net",
       documents: "",
       backup: "SDX_backup",
       templates: "Templates",
       stencils: "Stencils",
-      // approved: "Approved",
       approved: "",
       semuserlogin: null,
       semmongoconnectiontoken: "",
@@ -92,7 +88,6 @@ class Demo extends React.Component<{}, DemoState> {
     };
     let email = this.state.email;
     
-    
     let subject = "Kontaktanfrage über Semtalk.com";
     let mailtext = 'Daten: \n\n'
            + 'Name: ' + this.state.firstName + ' ' + this.state.lastName 
@@ -103,10 +98,6 @@ class Demo extends React.Component<{}, DemoState> {
     mgSend_Mail(mongo, "sales@semtalk.com", mailtext, subject);
      
     this.setState({ mailsend: true});
-
-
-
-
   }
 
   render() {
@@ -114,11 +105,12 @@ class Demo extends React.Component<{}, DemoState> {
       this.state;
 
     return (
-      <div className="content-shell">
+      /* Änderung: Wrapper auf 'process-page' vereinheitlicht */
+      <div className="process-page">
 
         {/* Hero */}
         <section className="section">
-          <div className="section-content pm-card">
+          <div className="pm-card">
             <p>
               <Text>
                 Für Fragen rund um unser Angebot oder zur allgemeinen Kontaktaufnahme können Sie uns gerne über das untenstehende Formular erreichen. Wir freuen uns auf Ihre Nachricht und werden uns so schnell wie möglich bei Ihnen melden.
@@ -128,154 +120,152 @@ class Demo extends React.Component<{}, DemoState> {
         </section>
 
          {!mailsend && (
-        
         <section className="section">
-         
+          {/* Änderung: Absolute Breite & Margin entfernt, Layout passt sich nun automatisch der .pm-card an */}
           <div
             style={{
               display: "flex",
               flexDirection: "column",
               gap: "16px",
-              maxWidth: "500px",
-              width: "100%",
-              marginLeft:"20px",
+              width: "100%"
             }}
-            className="section-content pm-card">
+            className="pm-card">
             <div><Title2>Kontaktanfrage</Title2> </div>
-  {/* Name */}
-  <div>
-    <Text weight="semibold">Name *</Text>
-    <div
-      style={{
-        display: "flex",
-        gap: "12px",
-        marginTop: "6px",
-        width: "100%"
-      }}
-    >
-      <Input
-        style={{ flex: 1, minWidth: 0 }}
-        placeholder="Vorname"
-        required
-        value={firstName}
-        onChange={(_, data) =>
-          this.setState({ firstName: data.value })
-        }
-      />
+            
+            {/* Name */}
+            <div>
+              <Text weight="semibold">Name *</Text>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "12px",
+                  marginTop: "6px",
+                  width: "100%"
+                }}
+              >
+                <Input
+                  style={{ flex: 1, minWidth: 0 }}
+                  placeholder="Vorname"
+                  required
+                  value={firstName}
+                  onChange={(_, data) =>
+                    this.setState({ firstName: data.value })
+                  }
+                />
 
-      <Input
-        style={{ flex: 1, minWidth: 0 }}
-        placeholder="Nachname"
-        required
-        value={lastName}
-        onChange={(_, data) =>
-          this.setState({ lastName: data.value })
-        }
-      />
-    </div>
-  </div>
+                <Input
+                  style={{ flex: 1, minWidth: 0 }}
+                  placeholder="Nachname"
+                  required
+                  value={lastName}
+                  onChange={(_, data) =>
+                    this.setState({ lastName: data.value })
+                  }
+                />
+              </div>
+            </div>
 
-  {/* Organisation */}
-  <div>
-    <Text weight="semibold">Organisation / Unternehmen *</Text>
-    <div style={{ marginTop: "6px", width: "100%" }}>
-      <Input
-        style={{ width: "100%" }}
-        placeholder="Ihr Unternehmen"
-        required
-        value={org}
-        onChange={(_, data) =>
-          this.setState({ org: data.value })
-        }
-      />
-    </div>
-  </div>
+            {/* Organisation */}
+            <div>
+              <Text weight="semibold">Organisation / Unternehmen *</Text>
+              <div style={{ marginTop: "6px", width: "100%" }}>
+                <Input
+                  style={{ width: "100%" }}
+                  placeholder="Ihr Unternehmen"
+                  required
+                  value={org}
+                  onChange={(_, data) =>
+                    this.setState({ org: data.value })
+                  }
+                />
+              </div>
+            </div>
 
-  {/* Telefonnummer */}
-  <div>
-    <Text weight="semibold">Telefonnummer *</Text>
-    <div style={{ marginTop: "6px", width: "100%" }}>
-      <Input
-        style={{ width: "100%" }}
-        placeholder="Ihre Telefonnummer"
-        required
-        value={phone}
-        onChange={(_, data) =>
-          this.setState({ phone: data.value })
-        }
-      />
-    </div>
-  </div>
+            {/* Telefonnummer */}
+            <div>
+              <Text weight="semibold">Telefonnummer *</Text>
+              <div style={{ marginTop: "6px", width: "100%" }}>
+                <Input
+                  style={{ width: "100%" }}
+                  placeholder="Ihre Telefonnummer"
+                  required
+                  value={phone}
+                  onChange={(_, data) =>
+                    this.setState({ phone: data.value })
+                  }
+                />
+              </div>
+            </div>
 
-  {/* E-Mail */}
-  <div>
-    <Text weight="semibold">E-Mail *</Text>
-    <div style={{ marginTop: "6px", width: "100%" }}>
-      <Input
-        style={{ width: "100%" }}
-        placeholder="Ihre E-Mail-Adresse"
-        required
-        value={email}
-        onChange={(_, data) =>
-          this.setState({ email: data.value })
-        }
-      />
-    </div>
-  </div>
+            {/* E-Mail */}
+            <div>
+              <Text weight="semibold">E-Mail *</Text>
+              <div style={{ marginTop: "6px", width: "100%" }}>
+                <Input
+                  style={{ width: "100%" }}
+                  placeholder="Ihre E-Mail-Adresse"
+                  required
+                  value={email}
+                  onChange={(_, data) =>
+                    this.setState({ email: data.value })
+                  }
+                />
+              </div>
+            </div>
 
-  {/* Kommentar */}
-  <div>
-    <Text weight="semibold">Kommentar oder Nachricht</Text>
-    <div style={{ marginTop: "6px", width: "100%" }}>
-      <Textarea
-        style={{ width: "100%" }}
-        placeholder="Ihre Nachricht (optional)"
-        value={comment}
-        rows={3}
-        resize="vertical"
-        onChange={(_, data) =>
-          this.setState({ comment: data.value })
-        }
-      />
-    </div>
-  </div>
+            {/* Kommentar */}
+            <div>
+              <Text weight="semibold">Kommentar oder Nachricht</Text>
+              <div style={{ marginTop: "6px", width: "100%" }}>
+                <Textarea
+                  style={{ width: "100%" }}
+                  placeholder="Ihre Nachricht (optional)"
+                  value={comment}
+                  rows={3}
+                  resize="vertical"
+                  onChange={(_, data) =>
+                    this.setState({ comment: data.value })
+                  }
+                />
+              </div>
+            </div>
 
-  {/* Datenschutz */}
-  <div style={{ marginTop: "12px" }}>
-    <Checkbox
-      checked={privacyAccepted}
-      onChange={(_, data) =>
-        this.setState({ privacyAccepted: !!data.checked })
-      }
-      required
-      label={
-        <>
-          Ich habe die{" "}
-          <a href="/impressum#datenschutz" target="_blank">
-            Datenschutzbestimmungen
-          </a>{" "}
-          gelesen und stimme der Verarbeitung meiner Daten zu.
-        </>
-      }
-    />
-  </div>
+            {/* Datenschutz */}
+            <div style={{ marginTop: "12px" }}>
+              <Checkbox
+                checked={privacyAccepted}
+                onChange={(_, data) =>
+                  this.setState({ privacyAccepted: !!data.checked })
+                }
+                required
+                label={
+                  <>
+                    Ich habe die{" "}
+                    <a href="/impressum#datenschutz" target="_blank">
+                      Datenschutzbestimmungen
+                    </a>{" "}
+                    gelesen und stimme der Verarbeitung meiner Daten zu.
+                  </>
+                }
+              />
+            </div>
 
-  <Button
-    appearance="primary"
-    size="large"
-    disabled={!this.isFormValid()}
-    onClick={this.handleSubmit}
-  >
-    Absenden
-  </Button>
-</div>
-          
+            <Button
+              appearance="primary"
+              size="large"
+              disabled={!this.isFormValid()}
+              onClick={this.handleSubmit}
+              style={{ alignSelf: "flex-start" }}
+            >
+              Absenden
+            </Button>
+          </div>
         </section>
         )}
 
         {mailsend && (
           <section className="section">
-          <div className="section-content pm-card">
+            <div className="pm-card">
               <Title2>Nachricht gesendet</Title2>
               <p>
                 Vielen Dank für Ihre Nachricht. Wir werden uns in Kürze bei Ihnen melden.
@@ -284,11 +274,9 @@ class Demo extends React.Component<{}, DemoState> {
           </section>
         )}
 
-        
-
       </div>
     );
   }
 }
 
-export default Demo;
+export default Contact;

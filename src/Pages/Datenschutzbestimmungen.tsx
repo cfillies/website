@@ -4,7 +4,7 @@ import { Title1, Text } from "@fluentui/react-components";
 class Datenschutzbestimmungen extends React.Component {
   render() {
     return (
-      <div className="content-shell">
+      <div className="process-page">
 
         <section className="section">
           <div className="section-content pm-card">

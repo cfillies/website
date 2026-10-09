@@ -13,7 +13,7 @@ import messenBild from "../assets/allaboutpm_m365sum.png";
 class Ressourcen extends React.Component {
   render() {
     return (
-      <div className="content-shell ressourcen-page">
+      <div className="process-page">
         <a id="top"></a>
 
         {/* Überschrift */}
