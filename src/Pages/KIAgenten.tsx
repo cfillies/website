@@ -6,15 +6,18 @@ import {
   BookOpen24Regular,
   PlugConnected24Regular
 } from "@fluentui/react-icons";
+import Prozessbot from "../assets/Prozessbot.png";
 
 class KIAgenten extends React.Component {
   render() {
     return (
-      <div className="content-shell">
+      /* Änderung: 'process-page' sorgt für die identische Breite und Abstände wie Produkte.tsx */
+      <div className="process-page">
 
         {/* Hero */}
         <section className="section">
-          <div className="section-content pm-card">
+          {/* Änderung: Das störende 'section-content' wurde entfernt, damit die Card direkt greift */}
+          <div className="pm-card">
             <Title1>KI‑Agenten</Title1>
             <p>
               <Text>
@@ -31,7 +34,8 @@ class KIAgenten extends React.Component {
         <section className="section">
           <div className="pm-grid">
 
-            <div className="section-content pm-card">
+            {/* Änderung: Auch hier 'section-content' entfernt */}
+            <div className="pm-card">
               <div className="pm-heading">
                 <Flow24Regular className="pm-icon" />
                 <Title2>Prozessmodelle</Title2>
@@ -44,7 +48,7 @@ class KIAgenten extends React.Component {
               </p>
             </div>
 
-            <div className="section-content pm-card">
+            <div className="pm-card">
               <div className="pm-heading">
                 <BookOpen24Regular className="pm-icon" />
                 <Title2>Semantische Modelle</Title2>
@@ -57,7 +61,7 @@ class KIAgenten extends React.Component {
               </p>
             </div>
 
-            <div className="section-content pm-card">
+            <div className="pm-card">
               <div className="pm-heading">
                 <Bot24Regular className="pm-icon" />
                 <Title2>Agenten & Fähigkeiten</Title2>
@@ -68,9 +72,14 @@ class KIAgenten extends React.Component {
                   Schnittstellen wie MCP bereitgestellt und können wiederverwendet werden.
                 </Text>
               </p>
+              <img
+                src={Prozessbot}
+                alt="Prozessbot im Einsatz"
+                className="pm-image"
+              />
             </div>
 
-            <div className="section-content pm-card">
+            <div className="pm-card">
               <div className="pm-heading">
                 <PlugConnected24Regular className="pm-icon" />
                 <Title2>Ausführbare Workflows</Title2>
@@ -89,7 +98,8 @@ class KIAgenten extends React.Component {
 
         {/* Multi-Agenten-Systeme */}
         <section className="section">
-          <div className="section-content pm-card">
+          {/* Änderung: 'section-content' entfernt */}
+          <div className="pm-card">
             <div className="pm-heading">
               <Bot24Regular className="pm-icon" />
               <Title2>Multi‑Agenten‑Systeme</Title2>

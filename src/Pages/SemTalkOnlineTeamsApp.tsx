@@ -1,13 +1,14 @@
 import React from "react";
 import { Title1, Title2, Text } from "@fluentui/react-components";
+import Storepic from "../assets/365store.png";
 
 class SemTalkOnlineTeamsApp extends React.Component {
   render() {
     return (
-      <div className="content-shell">
+      <div className="process-page">
 
         <section className="section">
-          <div className="section-content pm-card">
+          <div className="pm-card">
             <Title1>SemTalk Online in Microsoft365 – Zusammenarbeit neu gedacht</Title1>
 
             <p>
@@ -32,11 +33,16 @@ class SemTalkOnlineTeamsApp extends React.Component {
                 Vorteilen von Microsoft Teams.
               </Text>
             </p>
+            <img
+                src={Storepic}
+                alt="Bild vom Store"
+                className="pm-image"
+              />
           </div>
         </section>
 
         <section className="section">
-          <div className="section-content pm-card">
+          <div className="pm-card">
             <Title2>Die Vorteile von SemTalk Online in Microsoft365 auf einen Blick</Title2>
 
             <p>
@@ -86,7 +92,7 @@ class SemTalkOnlineTeamsApp extends React.Component {
         </section>
 
         <section className="section">
-          <div className="section-content pm-card">
+          <div className="pm-card">
             <Title2>Weitere Informationen</Title2>
 
             <p>
@@ -105,7 +111,7 @@ class SemTalkOnlineTeamsApp extends React.Component {
                 auf der Wiki‑Seite:
                 <br />
                 <a
-                  href="https://github.com/SemTalkOnline/SemTalkOnline/wiki/SemTalk-Online-in-Microsoft-365"
+                  href="https://github.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

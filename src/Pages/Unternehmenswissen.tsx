@@ -5,6 +5,7 @@ import {
   Document24Regular,
   BrainCircuit24Regular
 } from "@fluentui/react-icons";
+import ontologyExample from "../assets/Ontology-example.png";
 
 class Unternehmenswissen extends React.Component {
   render() {
@@ -79,8 +80,15 @@ class Unternehmenswissen extends React.Component {
                   werden. Die Beziehung „kommt aus“ verbindet die Käsesorten mit ihren
                   Herkunftsländern und macht die Bedeutung der Informationen sichtbar.
                 </Text>
+
+
               </p>
-              
+              <img
+                src={ontologyExample}
+                alt="Beispiel einer Ontologie"
+                className="pm-image"
+              />
+
             </div>
 
           </div>

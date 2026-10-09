@@ -5,7 +5,7 @@ import { Location24Regular } from "@fluentui/react-icons";
 class Impressum extends React.Component {
   render() {
     return (
-      <div className="content-shell">
+      <div className="process-page">
 
         <section className="section">
           <div className="section-content pm-card">
