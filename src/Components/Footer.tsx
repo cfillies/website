@@ -50,8 +50,9 @@ class Footer extends React.Component {
           <div>
             <Text weight="semibold">Unternehmen</Text>
             <Link to="/impressum">Impressum</Link>
+            <a href="/contact">Kontakt</a>
             <a href="/datenschutz">Datenschutzbestimmungen</a>
-            <a href="/nutzungsbestimmungen-semtalk-online">Nutzungsbestimmungen SemTalk Online</a>
+            <a href="/nutzungsbestimmungen-semtalk-online">Nutzungsbestimmungen</a>
           </div>
         </div>
       </footer>
