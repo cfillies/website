@@ -39,7 +39,7 @@ class Prozessmanagement extends React.Component {
             </div>
 
             {/* Prozessmanagement (rechts) */}
-            <div className="section-content pm-card">
+            <div className="pm-card">
               <Title1>Prozessmanagement</Title1>
               <p>
                 <Text>
