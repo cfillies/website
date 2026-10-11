@@ -202,6 +202,7 @@ class Ressourcen extends React.Component {
               className="messen-preview-card"
               style={{
                 display: "flex",
+                flexWrap: "wrap",
                 gap: "20px",
                 marginTop: "16px",
                 padding: "16px",

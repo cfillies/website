@@ -691,9 +691,10 @@ a {
 .process-page,
 .uw-page,
 .impressum-page {
-  width: min(1180px, calc(100% - 40px));
+  width: 100%;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 /* Section spacing (wie Startseite) */
@@ -830,10 +831,17 @@ a {
   margin-bottom: 42px;
 }
 
+.pm-grid > * {
+  min-width: 0;
+}
+
 @media (max-width: 900px) {
-  .pm-grid {
+
+  .pm-grid,
+  .pm-grid-2col {
     grid-template-columns: 1fr;
   }
+
 }
 
 .pm-grid-2col {
@@ -841,6 +849,12 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   align-items: start;
+}
+
+@media (max-width: 900px) {
+  .pm-grid-2col {
+    grid-template-columns: 1fr;
+  }
 }
 
 .pm-toc ul {
@@ -920,13 +934,7 @@ a {
 }
 
 /* Einheitlicher Seitenrahmen für Unterseiten */
-.process-page,
-.uw-page,
-.impressum-page {
-  width: min(1180px, calc(100% - 40px));
-  margin: 0 auto;
-  padding: 0 2rem;
-}
+
 
 /* Kompaktere Abstände zwischen Sections */
 .process-page .section,
@@ -957,7 +965,7 @@ a {
 
 /* Inhaltsverzeichnis soll exakt so breit sein wie eine Grid-Spalte */
 .process-page .pm-toc {
-  width: calc((1180px - 64px - 24px) / 2);
+  width: 100%;
   margin-left: 0;
   margin-right: 0;
 }
@@ -985,4 +993,66 @@ a {
 
 .social-icon:hover svg {
   color: #0078d4; /* Microsoft-Blau */
+}
+
+.pm-card h1,
+.pm-card h2,
+.pm-card h3,
+.pm-card .fui-Title1,
+.pm-card .fui-Title2 {
+  overflow-wrap: normal;
+  word-break: normal;
+  white-space: normal;
+}
+
+.pm-card {
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 760px) {
+
+  .pm-card {
+    padding: 20px;
+  }
+
+  .pm-heading {
+    flex-wrap: wrap;
+  }
+
+  .pm-heading h1,
+  .pm-heading h2 {
+    min-width: 0;
+  }
+}
+
+.pm-card {
+  overflow: hidden;
+}
+
+img,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+
+  .pm-toc {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  .pm-card {
+    padding: 18px;
+  }
+
 }
