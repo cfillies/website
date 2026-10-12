@@ -7,6 +7,7 @@ import './index.css';
 // Logo importieren
 import logo from './assets/logo.png';
 
+document.title = "Semtalk - modernes Prozessmanagement";
 // Favicon im Browser-Tab setzen
 let favicon = document.querySelector<HTMLLinkElement>('link[rel="icon"]');
 
