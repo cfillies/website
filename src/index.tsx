@@ -4,7 +4,23 @@ import { FluentProvider, webLightTheme } from '@fluentui/react-components';
 import App from './App';
 import './index.css';
 
-// ⭐ 1. Dein eigenes Semtation-Theme definieren
+// Logo importieren
+import logo from './assets/logo.png';
+
+document.title = "Semtalk - modernes Prozessmanagement";
+// Favicon im Browser-Tab setzen
+let favicon = document.querySelector<HTMLLinkElement>('link[rel="icon"]');
+
+if (!favicon) {
+  favicon = document.createElement('link');
+  favicon.rel = 'icon';
+  document.head.appendChild(favicon);
+}
+
+favicon.type = 'image/png';
+favicon.href = logo;
+
+// Semtation-Theme
 const semtationTheme = {
   ...webLightTheme,
   colorBrandForeground1: "#1F4FA8",
@@ -14,11 +30,12 @@ const semtationTheme = {
   colorNeutralBackground1: "#FFFFFF",
 };
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
 
 root.render(
   <React.StrictMode>
-    {/* ⭐ 2. Hier statt webLightTheme dein eigenes Theme verwenden */}
     <FluentProvider theme={semtationTheme}>
       <App />
     </FluentProvider>
