@@ -7,6 +7,7 @@ import {
   PlugConnected24Regular
 } from "@fluentui/react-icons";
 import Prozessbot from "../assets/Prozessbot.png";
+import BPMNAgentenModell from "../assets/BPMNAgentenModell.png";
 
 class KIAgenten extends React.Component {
   render() {
@@ -46,36 +47,16 @@ class KIAgenten extends React.Component {
                   Sie bilden die Grundlage für kontextualisierte KI‑Agenten und ausführbare Workflows.
                 </Text>
               </p>
-            </div>
-
-            <div className="pm-card">
-              <div className="pm-heading">
-                <BookOpen24Regular className="pm-icon" />
-                <Title2>Semantische Modelle</Title2>
-              </div>
-              <p>
-                <Text>
-                  Semantische Modelle definieren Begriffe, Zusammenhänge und Regeln.
-                  Sie sorgen dafür, dass Agenten fachlich korrekt und konsistent arbeiten.
-                </Text>
-              </p>
-            </div>
-
-            <div className="pm-card">
-              <div className="pm-heading">
-                <Bot24Regular className="pm-icon" />
-                <Title2>Agenten & Fähigkeiten</Title2>
-              </div>
-              <p>
-                <Text>
-                  Agenten führen Aufgaben flexibel aus. Fähigkeiten werden über standardisierte
-                  Schnittstellen wie MCP bereitgestellt und können wiederverwendet werden.
-                </Text>
-              </p>
               <img
-                src={Prozessbot}
-                alt="Prozessbot im Einsatz"
-                className="pm-image"
+                src={BPMNAgentenModell}
+                alt="BPMN Workflow zur Kita-Anmeldung"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "contain",
+                  borderRadius: "8px",
+                  display: "block",
+                }}
               />
             </div>
 
@@ -107,6 +88,39 @@ class KIAgenten extends React.Component {
                 allowFullScreen
               />
             </div>
+
+            <div className="pm-card">
+              <div className="pm-heading">
+                <Bot24Regular className="pm-icon" />
+                <Title2>Agenten & Fähigkeiten</Title2>
+              </div>
+              <p>
+                <Text>
+                  Agenten führen Aufgaben flexibel aus. Fähigkeiten werden über standardisierte
+                  Schnittstellen wie MCP bereitgestellt und können wiederverwendet werden.
+                </Text>
+              </p>
+              <img
+                src={Prozessbot}
+                alt="Prozessbot im Einsatz"
+                className="pm-image"
+              />
+            </div>
+
+            <div className="pm-card">
+              <div className="pm-heading">
+                <BookOpen24Regular className="pm-icon" />
+                <Title2>Semantische Modelle</Title2>
+              </div>
+              <p>
+                <Text>
+                  Semantische Modelle definieren Begriffe, Zusammenhänge und Regeln.
+                  Sie sorgen dafür, dass Agenten fachlich korrekt und konsistent arbeiten.
+                </Text>
+              </p>
+            </div>
+
+         
 
           </div>
         </section>
