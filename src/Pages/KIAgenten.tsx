@@ -73,7 +73,7 @@ class KIAgenten extends React.Component {
                 </Text>
               </p>
               <iframe
-                src="https://www.youtube.com/embed/G3LywXVsq-o"
+                src="https://www.youtube.com/embed/gb3k2WJmOVQ?si=Ximo09ROiHBy8bDS"
                 title="Agentic Workflows mit SemTalk Online"
                 style={{
                   border: "none",
