@@ -90,7 +90,8 @@ class Footer extends React.Component {
 
           <div>
             <Text weight="semibold">Unternehmen</Text>
-            <Link to="/impressum">Impressum</Link>
+            <Link to="/impressum" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Impressum
+            </Link>
             <a href="/datenschutz">Datenschutzbestimmungen</a>
             <a href="/terms-of-service-semtalk-online">Nutzungsbestimmungen SemTalk Online</a>
           </div>

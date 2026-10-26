@@ -6,6 +6,7 @@ class Impressum extends React.Component {
   render() {
     return (
       <div className="process-page">
+        <a id="top"></a>
 
         <section className="section">
           <div className="section-content pm-card">

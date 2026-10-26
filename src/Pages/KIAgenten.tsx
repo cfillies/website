@@ -90,6 +90,17 @@ class KIAgenten extends React.Component {
                   Die Ausführung erfolgt über LangGraph, das auch hohe parallele Volumina
                   zuverlässig verarbeiten kann.
                 </Text>
+                <a
+                  href="https://www.youtube.com/watch?v=gb3k2WJmOVQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/gb3k2WJmOVQ/maxresdefault.jpg"
+                    alt="Agentic Workflows mit SemTalk Online"
+                    className="youtube-thumbnail"
+                  />
+                </a>
               </p>
             </div>
 
