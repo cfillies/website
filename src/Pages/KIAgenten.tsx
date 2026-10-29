@@ -117,6 +117,17 @@ class KIAgenten extends React.Component {
                   Semantische Modelle definieren Begriffe, Zusammenhänge und Regeln.
                   Sie sorgen dafür, dass Agenten fachlich korrekt und konsistent arbeiten.
                 </Text>
+                <a
+                  href="https://www.youtube.com/watch?v=gb3k2WJmOVQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/gb3k2WJmOVQ/maxresdefault.jpg"
+                    alt="Agentic Workflows mit SemTalk Online"
+                    className="youtube-thumbnail"
+                  />
+                </a>
               </p>
             </div>
 

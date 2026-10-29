@@ -53,7 +53,15 @@ class HeroSection extends React.Component {
               Demo anfordern
             </Button>
 
-            <Button appearance="secondary" size="large" icon={<ArrowRight24Regular />}>
+            <Button
+              appearance="secondary"
+              size="large"
+              icon={<ArrowRight24Regular />}
+              as="a"
+              href="https://www.youtube.com/watch?v=gb3k2WJmOVQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Video ansehen
             </Button>
           </div>
@@ -161,9 +169,9 @@ class HeroSection extends React.Component {
                 type="button"
                 className="knowledge-btn"
                 aria-label="Systeme und Daten"
-                onClick={() => (window.location.href = "/microsoft365")}
+                onClick={() => (window.location.href = "/semtalk-online-teams-app")}
               >
-                Systeme &amp; Daten
+                Systeme & Daten
               </button>
 
             </div>
