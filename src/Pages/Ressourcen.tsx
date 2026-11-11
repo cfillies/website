@@ -29,6 +29,42 @@ class Ressourcen extends React.Component {
           </div>
         </section>
 
+        <section className="section">
+          <div id="aktuelles" className="pm-card">
+            <div className="pm-heading">
+              <Info24Regular className="pm-icon" />
+              <Title2>Aktuelles</Title2>
+            </div>
+
+            <Text weight="semibold">
+              Webinar: KI und Geschäftsprozesse
+            </Text>
+
+            <Text block>
+              17. November 2026, 16 bis 17 Uhr
+            </Text>
+            <ul style={{ paddingLeft: "20px", lineHeight: "1.6" }}>
+              <li>
+            <p>
+              <Text>
+                KI und Geschäftsprozesse gehören zusammen: Wer seine Abläufe kennt, 
+                kann KI gezielt einsetzen. Im Webinar diskutieren wir aktuelle Fragen zu diesem Thema, 
+                gemeinsam mit Sven Schnägelberger, Gründer des BPM-Clubs, 
+                der größten Prozessmanagement-Community im deutschsprachigen Raum.
+                Freuen Sie sich auf einen spannenden Austausch und einen Einblick in SemTalk Online.
+              </Text>
+            </p>
+            <a
+                      href="https://www.linkedin.com/events/7515738391309901825/?viewAsMember=true"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >jetzt anmelden</a>
+            </li>
+            </ul>
+            
+          </div>
+        </section>
+
         {/* Whitepaper + LinkedIn */}
         <section className="section">
           <div className="pm-grid-2col">
@@ -46,6 +82,16 @@ class Ressourcen extends React.Component {
                   Wissensmodellierung und KI‑gestützte Anwendungen. Sie richten sich an
                   Fachleute, die praxisnahe Beispiele und tiefgehendes Hintergrundwissen suchen.
                 </Text>
+                <li>
+                    <a
+                      href="https://www.linkedin.com/events/7515738391309901825/?viewAsMember=true"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Semtation – LinkedIn Post (Prozessmanagement & KI)
+                    </a>
+                  </li>
+
               </p>
 
               {/* Vorschau + Download */}
