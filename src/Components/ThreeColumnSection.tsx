@@ -75,13 +75,16 @@ class ThreeColumnSection extends React.Component {
         <Card className="info-card">
           <Title2 className="info-title">Aktuelles & Ressourcen</Title2>
           <div className="resource-list">
+           
             {resources.map((resource) => {
               const linkTarget =
-                resource.kind === "Messen"
+                    resource.kind === "Messen"
                   ? "/ressourcen#messen"
                   : resource.kind === "Whitepaper"
                   ? "/ressourcen#whitepaper"
-                  : "/ressourcen";
+                  : resource.kind === "Aktuelles"
+                  ? "/ressourcen#aktuelles" 
+                  :"/ressourcen";
 
               return (
                 <a

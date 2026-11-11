@@ -166,6 +166,11 @@ export const resources: Resource[] = [
     kind: 'Whitepaper',
     title: 'Whitepaper: Semtalk® in Microsoft 365: Prozesswissen nativ integriert',
     date: 'Oktober 2026'
+  },
+  {
+    kind: 'Aktuelles',
+    title: 'Webinar: KI und Geschäftsprozesse',
+    date: '17. November 2026'
   }
 ];
 
