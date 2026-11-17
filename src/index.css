@@ -164,11 +164,7 @@ a {
 
 
 .hero-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 28px;
-  align-items: start;
-  padding: 42px 0 28px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .hero-eyebrow {
@@ -207,7 +203,8 @@ a {
 
 .hero-stack {
   display: grid;
-  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
 }
 
 .stack-card {
@@ -795,6 +792,14 @@ a {
   background: var(--color-white);
 }
 
+/* Gemeinsame Maximalbreite für alle Boxen auf Unterseiten */
+.process-page .pm-card {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .pm-card {
   background: var(--color-white);
   border: 1px solid rgba(31, 79, 168, 0.15);
@@ -1060,3 +1065,32 @@ iframe {
 .youtube-thumbnail:hover {
   transform: scale(1.02);
 }
+
+.workflow-image {
+  width: 85%;
+  margin: 20px auto 0;
+  display: block;
+}
+
+.stack-video {
+  background: linear-gradient(
+    180deg,
+    rgba(245, 247, 255, 0.96),
+    rgba(255, 255, 255, 0.96)
+  );
+}
+
+.youtube-thumbnail {
+  width: 100%;
+  margin-top: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid rgba(31, 79, 168, 0.15);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.youtube-thumbnail:hover {
+  transform: scale(1.02);
+}
+

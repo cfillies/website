@@ -1,3 +1,4 @@
+import workflowImage from "../assets/usedcase-bpmn.png";
 import React from "react";
 import {
   Badge,
@@ -53,17 +54,7 @@ class HeroSection extends React.Component {
               Demo anfordern
             </Button>
 
-            <Button
-              appearance="secondary"
-              size="large"
-              icon={<ArrowRight24Regular />}
-              as="a"
-              href="https://www.youtube.com/watch?v=gb3k2WJmOVQ"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Video ansehen
-            </Button>
+          
           </div>
 
           <div className="hero-features">
@@ -89,108 +80,144 @@ class HeroSection extends React.Component {
         <div className="hero-stack">
           <Card className="stack-card stack-agents">
             <div className="stack-head">
-              <Subtitle1 className="stack-title">KI-Agenten</Subtitle1>
-              <Text size={200}>Assistenz, Compliance, Wissen und Projekte</Text>
+              <Subtitle1 className="stack-title">
+                Vom Prozessmodell zum intelligenten Workflow
+              </Subtitle1>
+
+              <Text size={200} block>
+                SemTalk verbindet die Klarheit modellierter Prozesse mit der Flexibilität von KI-Agenten
+              </Text>
             </div>
+
+            <Text weight="semibold">
+              Warum SemTalk?
+            </Text>
+
+            <Text block>
+              Viele KI-Lösungen starten mit einem Prompt. Doch sobald mehrere Schritte,
+              Daten, Systeme und Menschen zusammenspielen, wird aus dem Prompt schnell
+              eine schwer überschaubare Blackbox. SemTalk setzt auf einen anderen Ansatz:
+              Der Geschäftsprozess gibt den Rahmen vor. KI übernimmt dort, wo Sprache,
+              Interpretation oder flexible Bearbeitung gefragt sind.
+            </Text>
+            <Text block>
+              SemTalk bringt klassische Prozesslogik und agentische Fähigkeiten in einem Workflow zusammen. 
+              Nicht jeder Schritt braucht KI: Die passende Ausführungsart wird je nach Aufgabe gewählt.
+            </Text>
+              <table className="workflow-table">
+                <tbody>
+
+                  <tr>
+                    <td className="workflow-key">Prozessmodell</td>
+                    <td className="workflow-value">
+                      Definiert Aktivitäten, Reihenfolge,
+                      Verzweigungen und Verantwortlichkeiten.
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="workflow-key">KI-Agent</td>
+                    <td className="workflow-value">
+                      Übernimmt sprachliche Interpretation,
+                      flexible Bearbeitung und die Nutzung geeigneter Tools.
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="workflow-key">Prozessdaten</td>
+                    <td className="workflow-value">Halten strukturierte Ergebnisse fest 
+                      und stellen sie späteren Schritten bereit.
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="workflow-key">Menschliche Interaktion</td>
+                    <td className="workflow-value">Ermöglicht Eingaben, 
+                      Rückfragen und Entscheidungen an den vorgesehenen Stellen.
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="workflow-key">Services & MCP-Tools</td>
+                    <td className="workflow-value">Verbinden den Workflow 
+                      mit externen Funktionen und Systemen.
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="workflow-key">Workflow-Debugger</td>
+                    <td className="workflow-value">Macht Fortschritt, 
+                      Prozesszustand und Tool-Aufrufe untersuchbar. 
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
             <div className="stack-items">
-              <button 
-                type="button" 
-                className="agent-btn" 
-                aria-label="Prozesse"
-                onClick={() => (window.location.href = "/ki-agenten")}>
-                  Prozess-Assistent</button>
-              <button
-                type="button" 
-                className="agent-btn" 
-                aria-label="Compliance"
-                onClick={() => (window.location.href = "/ki-agenten")}>
-                  Compliance-Agent</button>
-              <button
-                type="button" 
-                className="agent-btn" 
-                aria-label="Wissen"
-                onClick={() => (window.location.href = "/ki-agenten")}>
-                  Wissens-Agent</button>
-              <button
-                type="button" 
-                className="agent-btn" 
-                aria-label="Projekt"
-                onClick={() => (window.location.href = "/ki-agenten")}>Projekt-Agent</button>
             </div>
           </Card>
 
           <Card className="stack-card stack-context">
-            <Subtitle1 className="stack-title">Kontext für KI-Agenten</Subtitle1>
-            <Text>Strukturiert • Konsistent • Vertrauenswürdig</Text>
+            <Subtitle1 className="stack-title">Die wichtigsten Nutzenargumente</Subtitle1>
+            <ul>
+              <li>Transparenz statt Blackbox. Der Ablauf bleibt als Prozessmodell sichtbar. 
+                Aktivitäten, Verzweigungen, Daten und menschliche Aufgaben 
+                sind nachvollziehbar strukturiert. </li>  
+              <li>Gezielte KI statt Mega-Prompt. Jeder Prozessschritt hat eine klar umrissene Aufgabe. 
+                Agenten werden dort eingesetzt, wo sie einen Mehrwert bieten – nicht für alles. </li> 
+              <li>Kontrolle über den Ablauf. Der Prozess legt fest, welcher Schritt wann ausgeführt wird, 
+                welche Daten weitergegeben werden und wann ein Mensch eingebunden wird. </li>
+              <li>Debugging statt Rätselraten. Die Ausführung kann Schritt für Schritt untersucht werden: 
+                Prozessstatus, aktuelle Daten und verwendete MCP-Tools werden sichtbar. </li>
+              <li>Menschen und Systeme eingebunden. Formulare, Freigaben, Webservices, 
+                Datenbanken und KI können in einem modellierten Workflow zusammenspielen. </li>
+              <li>Wiederverwendbare Fähigkeiten. Agentische Teilnehmer können als aufrufbare 
+                Fähigkeiten bereitgestellt werden; 
+                dahinter kann auch ein ausführbarer Prozess stehen. </li>
+            </ul>
           </Card>
 
-          <Card className="stack-card stack-knowledge">
-            <Subtitle1 className="stack-title">Unternehmenswissen</Subtitle1>
-
-            <div className="knowledge-grid">
-
-              <button
-                type="button"
-                className="knowledge-btn"
-                aria-label="Prozesse"
-                onClick={() => (window.location.href = "/prozessmanagement")}
-              >
-                Prozesse
-              </button>
-
-              <button
-                type="button"
-                className="knowledge-btn"
-                aria-label="Rollen und Organisation"
-                onClick={() => (window.location.href = "/unternehmenswissen")}
-              >
-                Rollen &amp; Organisation
-              </button>
-
-              <button
-                type="button"
-                className="knowledge-btn"
-                aria-label="Dokumente und Informationen"
-                onClick={() => (window.location.href = "/ressourcen")}
-              >
-                Dokumente &amp; Informationen
-              </button>
-
-              <button
-                type="button"
-                className="knowledge-btn"
-                aria-label="Begriffe und Ontologien"
-                onClick={() => (window.location.href = "/unternehmenswissen")}
-              >
-                Begriffe &amp; Ontologien
-              </button>
-
-              <button
-                type="button"
-                className="knowledge-btn"
-                aria-label="Systeme und Daten"
-                onClick={() => (window.location.href = "/semtalk-online-teams-app")}
-              >
-                Systeme & Daten
-              </button>
-
-            </div>
-          </Card>
+          
 
 
           <Card className="stack-card stack-modeling">
             <Subtitle1 className="stack-title">Prozessmodellierung mit SemTalk</Subtitle1>
-            <Text>BPMN, eEPK, DMN und individuelle Metamodelle</Text>
-            <div className="model-preview">
-              <div className="preview-bar" />
-              <div className="preview-flow">
-                <span className="flow-chip start">Start</span>
-                <span className="flow-chip task">Prüfen</span>
-                <span className="flow-chip decision">Entscheiden</span>
-                <span className="flow-chip end">Ende</span>
-              </div>
-            </div>
+            <text>
+              Ein Elternteil schreibt im Chat: „Ich brauche einen Kita-Platz für mein Kind in Bielefeld.“ Ein Agent sucht mithilfe verfügbarer MCP-Tools nach passenden Kitas. Der Prozess fordert anschließend die benötigten Angaben über ein Formular an. Ein LLM erstellt aus den strukturierten Daten ein Anschreiben; danach kann ein Webservice die Anfrage versenden. Der Workflow steuert den Ablauf, 
+              übergibt Prozessdaten und macht die Ausführung im Debugger nachvollziehbar.
+            </text>
+            <img
+              src={workflowImage}
+              alt="Agentischer Workflow mit Prozessmodell und KI-Agenten"
+              className="workflow-image"
+/>
           </Card>
+
+          <Card className="stack-card stack-video">
+            <div className="stack-head">
+              <Subtitle1 className="stack-title">
+                Agentic Workflows mit SemTalk Online
+              </Subtitle1>
+
+              <Text size={200} block>
+                Sehen Sie, wie Prozessmodelle, KI-Agenten und Unternehmenswissen
+                in einem ausführbaren Workflow zusammenarbeiten.
+              </Text>
+            </div>
+
+            <a
+              href="https://www.youtube.com/watch?v=gb3k2WJmOVQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://img.youtube.com/vi/gb3k2WJmOVQ/maxresdefault.jpg"
+                alt="Agentic Workflows mit SemTalk Online"
+                className="youtube-thumbnail"
+              />
+            </a>
+          </Card>
+
         </div>
       </section>
     );
