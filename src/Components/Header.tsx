@@ -16,9 +16,11 @@ class Header extends React.Component {
           <img src={logo} alt="SemTalk Logo"/>
           </Link>
           <div>
-            <Text className="brand-name" weight="semibold">
-              SemTalk
-            </Text>
+            <Link to="/">
+              <Text className="brand-name" weight="semibold">
+                SemTalk
+              </Text>
+            </Link>
             
           </div>
         </div>
