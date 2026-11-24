@@ -204,18 +204,22 @@ class HeroSection extends React.Component {
                 in einem ausführbaren Workflow zusammenarbeiten.
               </Text>
             </div>
-
-            <a
-              href="https://www.youtube.com/watch?v=gb3k2WJmOVQ"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.youtube.com/vi/gb3k2WJmOVQ/maxresdefault.jpg"
-                alt="Agentic Workflows mit SemTalk Online"
-                className="youtube-thumbnail"
-              />
-            </a>
+            <iframe
+                src="https://www.youtube.com/embed/gb3k2WJmOVQ?si=Ximo09ROiHBy8bDS"
+                title="Agentic Workflows mit SemTalk Online"
+                style={{
+                  border: "none",
+                  borderRadius: "8px",
+                  width: "100%",
+                  height: "auto",
+                  aspectRatio: "16 / 9",
+                  display: "block"
+                }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+            />
+          
           </Card>
 
         </div>
