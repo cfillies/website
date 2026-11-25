@@ -6,7 +6,8 @@ import {
   Card,
   Subtitle1,
   Text,
-  Title1
+  Title1,
+  Title2
 } from "@fluentui/react-components";
 
 import {
@@ -17,10 +18,15 @@ import {
   ShieldCheckmark24Regular
 } from "@fluentui/react-icons";
 
+import { resources } from "../App";
+
 class HeroSection extends React.Component {
   render() {
     return (
       <section className="hero-grid">
+      <div className="hero-class-layout">
+        
+        
         <div className="hero-copy">
           <div className="hero-eyebrow">
             <Badge appearance="filled" color="brand">
@@ -53,29 +59,72 @@ class HeroSection extends React.Component {
             >
               Demo anfordern
             </Button>
-
           
           </div>
 
-          <div className="hero-features">
-            <div className="hero-feature">
-              <Globe24Regular />
-              <span>In Microsoft 365 integriert</span>
+            <div className="hero-features">
+              <div className="hero-feature">
+                <Globe24Regular />
+                <span>In Microsoft 365 integriert</span>
+              </div>
+              <div className="hero-feature">
+                <Microscope24Regular />
+                <span>Semantisch & wiederverwendbar</span>
+              </div>
+              <div className="hero-feature">
+                <Bot24Regular />
+                <span>Basis für KI-Agenten</span>
+              </div>
+              <div className="hero-feature">
+                <ShieldCheckmark24Regular />
+                <span>Sicher, nachvollziehbar & compliant</span>
+              </div>
             </div>
-            <div className="hero-feature">
-              <Microscope24Regular />
-              <span>Semantisch & wiederverwendbar</span>
-            </div>
-            <div className="hero-feature">
-              <Bot24Regular />
-              <span>Basis für KI-Agenten</span>
-            </div>
-            <div className="hero-feature">
-              <ShieldCheckmark24Regular />
-              <span>Sicher, nachvollziehbar & compliant</span>
-            </div>
+          
+          
           </div>
+
+            <div className="hero-info-card">
+                  <Card className="info-card">
+                    <Title2 className="info-title">Aktuelles & Ressourcen</Title2>
+                    <div className="resource-list">
+                     
+                      {resources.map((resource) => {
+                        const linkTarget =
+                              resource.kind === "Messen"
+                            ? "/ressourcen#messen"
+                            : resource.kind === "Whitepaper"
+                            ? "/ressourcen#whitepaper"
+                            : resource.kind === "Aktuelles"
+                            ? "/ressourcen#aktuelles" 
+                            :"/ressourcen";
+          
+                        return (
+                          <a
+                            href={linkTarget}
+                            className="resource-item"
+                            key={resource.title}
+                            style={{ textDecoration: "none", color: "inherit" }}
+                          >
+                            <div className="resource-kind">{resource.kind}</div>
+                            <div className="resource-body">
+                              <strong>{resource.title}</strong>
+                              <Text block>{resource.date}</Text>
+                            </div>
+                            <ArrowRight24Regular />
+                          </a>
+                        );
+                      })}
+                    </div>
+          
+                    <div className="section-link compact">
+                      <a href="/Ressourcen">Alle Ressourcen</a>
+                      <ArrowRight24Regular />
+                    </div>
+                  </Card>
+                </div>
         </div>
+          
 
         <div className="hero-stack">
           <Card className="stack-card stack-agents">
