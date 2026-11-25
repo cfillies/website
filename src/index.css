@@ -1107,6 +1107,7 @@ iframe {
   grid-template-columns: 1fr 360px;
   gap: 24px;
   align-items: start;
+  
 }
 
 .hero-copy {
@@ -1115,6 +1116,7 @@ iframe {
   color: var(--color-blue-dark);
   font-size: 0.95rem;
 }
+
 
 .hero-info-card {
   display:grid;
@@ -1125,7 +1127,39 @@ iframe {
 
 }
 
+
 .hero-class-layout {
   display: flex;
   margin-bottom: 18px;
 }
+
+@media (max-width: 900px) {
+
+  .hero-copy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-resources-card {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .hero-class-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .hero-info-card {
+    width: 100%;
+  }
+
+}
+
